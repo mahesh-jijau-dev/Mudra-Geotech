@@ -12,7 +12,7 @@ const sv = document.getElementById("sv");
 if (sv) {
   sv.innerHTML = S.map(
     (s, i) =>
-      `<div class="reveal card group bg-white border border-sand rounded-2xl p-7 relative overflow-hidden" style="transition-delay:${(i % 4) * 80}ms"><div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-or/10 group-hover:scale-[2.2] transition-transform duration-500"></div><div class="relative arch w-14 h-16 strata text-white flex items-end justify-center pb-2 font-disp font-bold">0${i + 1}</div><h3 class="relative font-disp font-bold text-brn text-lg mt-5">${s[0]}</h3><p class="relative text-sm text-brn/70 mt-2">${s[1]}</p></div>`,
+      `<div class="reveal card group bg-white border border-sand rounded-2xl p-7 relative overflow-hidden" style="transition-delay:${(i % 4) * 80}ms"><div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-or/10 group-hover:scale-[2.2] transition-transform duration-500"></div><div class="relative arch w-14 h-16 strata text-brn flex items-end justify-center pb-2 font-disp font-bold">0${i + 1}</div><h3 class="relative font-disp font-bold text-brn text-lg mt-5">${s[0]}</h3><p class="relative text-sm text-brn/70 mt-2">${s[1]}</p></div>`,
   ).join("");
 }
 const G = [
@@ -51,7 +51,7 @@ const gal = document.getElementById("gal");
 if (gal) {
   gal.innerHTML = G.map(
     (g) =>
-      `<figure class="reveal gi card relative overflow-hidden rounded-2xl cursor-zoom-in ${g[2]}"><img data-lb src="${IM[g[0]]}" alt="${g[1]}" class="gimg w-full h-full object-cover" loading="lazy"><figcaption class="cap absolute inset-x-0 bottom-0 bg-gradient-to-t from-dk/90 to-transparent text-white text-sm p-4 pt-8">${g[1]}</figcaption></figure>`,
+      `<figure class="reveal gi card relative overflow-hidden rounded-2xl cursor-zoom-in ${g[2]}"><img data-lb src="${IM[g[0]]}" alt="${g[1]}" class="gimg w-full h-full object-cover" loading="lazy"><figcaption class="cap absolute inset-x-0 bottom-0 bg-gradient-to-t from-cream/95 via-cream/70 to-transparent text-brn text-sm p-4 pt-8">${g[1]}</figcaption></figure>`,
   ).join("");
 }
 const galPreview = document.getElementById("gal-preview");
@@ -59,7 +59,7 @@ if (galPreview) {
   const previewItems = G.slice(0, 6);
   galPreview.innerHTML = previewItems.map(
     (g) =>
-      `<figure class="reveal gi card relative overflow-hidden rounded-2xl cursor-zoom-in ${g[2] === "row-span-2" ? "" : ""}"><img data-lb src="${IM[g[0]]}" alt="${g[1]}" class="gimg w-full h-full object-cover" loading="lazy"><figcaption class="cap absolute inset-x-0 bottom-0 bg-gradient-to-t from-dk/90 to-transparent text-white text-sm p-4 pt-8">${g[1]}</figcaption></figure>`,
+      `<figure class="reveal gi card relative overflow-hidden rounded-2xl cursor-zoom-in ${g[2] === "row-span-2" ? "" : ""}"><img data-lb src="${IM[g[0]]}" alt="${g[1]}" class="gimg w-full h-full object-cover" loading="lazy"><figcaption class="cap absolute inset-x-0 bottom-0 bg-gradient-to-t from-cream/95 via-cream/70 to-transparent text-brn text-sm p-4 pt-8">${g[1]}</figcaption></figure>`,
   ).join("");
 }
 const F = [
@@ -77,7 +77,7 @@ const fl = document.getElementById("fl");
 if (fl) {
   fl.innerHTML = F.map(
     (t) =>
-      `<li class="card flex gap-3 bg-white/5 border border-white/10 rounded-xl p-4 text-sm text-white/85"><span class="mt-1.5 w-2 h-2 rounded-full bg-or shrink-0"></span><span>${t}</span></li>`,
+      `<li class="card flex gap-3 bg-white border border-sand rounded-xl p-4 text-sm text-brn/85"><span class="mt-1.5 w-2 h-2 rounded-full bg-or shrink-0"></span><span>${t}</span></li>`,
   ).join("");
 }
 const C = [
@@ -123,13 +123,7 @@ const nav = document.getElementById("nav"),
   burger = document.getElementById("burger");
 function sc() {
   const y = scrollY;
-  if (nav) {
-    if (y > 40) {
-      nav.classList.add("bg-cream/95", "backdrop-blur", "shadow-md");
-    } else {
-      nav.classList.remove("bg-cream/95", "backdrop-blur", "shadow-md");
-    }
-  }
+  if (nav && y > 40) nav.classList.add("bg-cream/95", "backdrop-blur", "shadow-md");
   if (bar) {
     bar.style.width =
       (y / (document.documentElement.scrollHeight - innerHeight)) * 100 + "%";

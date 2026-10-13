@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -35,7 +35,7 @@
     <!-- NAV -->
     <header
       id="nav"
-      class="fixed inset-x-0 z-50 transition-all duration-300"
+      class="fixed inset-x-0 z-50 bg-cream/95 backdrop-blur shadow-md transition-all duration-300"
       style="top: env(safe-area-inset-top, 0px)"
     >
       <div
@@ -86,17 +86,7 @@
 
     <!-- PAGE HERO -->
     <section
-      class="relative pt-40 pb-20 overflow-hidden text-white"
-      style="
-        background:
-          linear-gradient(
-            110deg,
-            rgba(43, 26, 16, 0.95) 15%,
-            rgba(74, 44, 26, 0.85) 55%,
-            rgba(181, 74, 31, 0.5)
-          ),
-          url(assets/hero.jpg) center/cover;
-      "
+      class="page-hero relative pt-40 pb-20 overflow-hidden"
     >
       <div class="relative max-w-7xl mx-auto px-5 text-center reveal in">
         <p
@@ -110,13 +100,13 @@
         <p class="mt-3 text-or font-medium tracking-wide">
           Bridging the gap between your infrastructure dreams and reality
         </p>
-        <p class="mt-3 text-white/80 text-lg max-w-2xl mx-auto">
+        <p class="mt-3 text-brn/80 text-lg max-w-2xl mx-auto">
           Reliable, innovative and sustainable geotechnical solutions delivered with 20+ years of technical depth and uncompromising quality PAN-India.
         </p>
-        <div class="mt-8 inline-flex items-center gap-4 text-sm text-white/70">
+        <div class="mt-8 inline-flex items-center gap-4 text-sm text-brn/70">
           <a href="index.html" class="hover:text-or transition">Home</a>
           <span>/</span>
-          <span class="text-white">About</span>
+          <span class="text-brn">About</span>
         </div>
       </div>
     </section>
@@ -135,10 +125,10 @@
             />
           </div>
           <div
-            class="absolute -bottom-6 -right-2 sm:right-6 bg-brn text-white rounded-2xl p-5 shadow-xl max-w-[220px]"
+            class="absolute -bottom-6 -right-2 sm:right-6 bg-white border border-sand text-brn rounded-2xl p-5 shadow-xl max-w-[220px]"
           >
             <div class="font-disp text-3xl text-or">2018</div>
-            <div class="text-sm text-white/80">
+            <div class="text-sm text-brn/80">
               Founded with a vision for reliable, innovative &amp; practical
               geotechnical solutions.
             </div>
@@ -207,7 +197,7 @@
           <div class="reveal card bg-white border border-sand rounded-3xl p-8 relative overflow-hidden">
             <div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-or/10"></div>
             <div class="relative">
-              <div class="w-16 h-16 strata rounded-2xl flex items-center justify-center text-white font-disp text-2xl">👁</div>
+              <div class="w-16 h-16 strata rounded-2xl flex items-center justify-center text-brn font-disp text-2xl">👁</div>
               <h3 class="font-disp text-2xl text-brn mt-6">Our Vision</h3>
               <p class="mt-3 text-sm text-brn/75 leading-relaxed">
                 To be a trusted leader in geotechnical engineering, delivering solutions that stand the test of time and build confidence in every infrastructure we touch.
@@ -217,7 +207,7 @@
           <div class="reveal card bg-white border border-sand rounded-3xl p-8 relative overflow-hidden" style="transition-delay:80ms">
             <div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-rust/10"></div>
             <div class="relative">
-              <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white font-disp text-2xl" style="background:linear-gradient(135deg,#B54A1F,#D9692D)">🎯</div>
+              <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-brn font-disp text-2xl" style="background:linear-gradient(135deg,#D9692D,#F2A36F)">🎯</div>
               <h3 class="font-disp text-2xl text-brn mt-6">Our Mission</h3>
               <p class="mt-3 text-sm text-brn/75 leading-relaxed">
                 To deliver reliable, innovative and practical geotechnical solutions with integrity – balancing technical excellence, constructability and economy for every client.
@@ -225,9 +215,9 @@
             </div>
           </div>
           <div class="reveal card bg-white border border-sand rounded-3xl p-8 relative overflow-hidden" style="transition-delay:160ms">
-            <div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-brn/10"></div>
+            <div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-or/10"></div>
             <div class="relative">
-              <div class="w-16 h-16 rounded-2xl bg-brn text-white flex items-center justify-center font-disp text-2xl">⭐</div>
+              <div class="w-16 h-16 rounded-2xl strata text-brn flex items-center justify-center font-disp text-2xl">⭐</div>
               <h3 class="font-disp text-2xl text-brn mt-6">Core Values</h3>
               <ul class="mt-3 space-y-2 text-sm text-brn/75">
                 <li><span class="text-rust">▸</span> Integrity &amp; transparency in every report</li>
@@ -320,7 +310,7 @@
     <!-- FOUNDER -->
     <section
       id="founder"
-      class="py-24 bg-dk text-white relative overflow-hidden"
+      class="py-24 bg-sand/60 text-brn relative overflow-hidden"
     >
       <div class="absolute inset-0 opacity-10 bg-tex"></div>
       <div class="relative max-w-7xl mx-auto px-5">
@@ -348,7 +338,7 @@
             </div>
             <h3 class="font-disp text-2xl mt-6">Er. Shubhada Jagtap</h3>
             <p class="text-or">Geotechnical Consultant</p>
-            <p class="mt-3 text-sm text-white/70">
+            <p class="mt-3 text-sm text-brn/70">
               Founder &amp; Consulting Geotechnical Engineer · 20+ years
             </p>
           </div>
@@ -390,13 +380,13 @@
         </p>
         <div class="mt-10 flex flex-wrap gap-4 justify-center">
           <a href="contact.html" class="btn btn-p">Contact Us →</a>
-          <a href="projects.html" class="btn btn-o !border-brn !text-brn hover:!bg-brn hover:!text-white">View Projects</a>
+          <a href="projects.html" class="btn btn-o !border-brn !text-brn hover:!bg-or hover:!text-white">View Projects</a>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="site-footer text-white/80">
+    <footer class="site-footer">
       <div class="max-w-7xl mx-auto px-5 py-10 grid md:grid-cols-3 footer-grid">
         <div>
           <img
@@ -404,31 +394,23 @@
             alt="MRUDA"
             class="h-16 bg-cream rounded-xl p-2"
           />
-          <p class="mt-4 text-sm text-white/60">
+          <p class="mt-4 text-sm text-brn/60">
             Bridging the gap between your infrastructure dreams and reality.
             Geotechnical consultancy since 2018.
           </p>
-          <a
-            href="MRUDA_Brochure.pdf"
-            target="_blank"
-            rel="noopener"
-            class="footer-cta"
-            ><i class="fa-regular fa-file-pdf"></i> Download Company Brochure (PDF)</a
-          >
         </div>
         <div>
-          <h4 class="font-disp text-white mb-4">Quick Links</h4>
+          <h4 class="font-disp text-brn mb-4">Quick Links</h4>
           <div class="grid grid-cols-2 gap-2 text-sm">
             <a class="hover:text-or transition" href="index.html">Home</a
             ><a class="hover:text-or transition" href="about.html">About</a
             ><a class="hover:text-or transition" href="projects.html">Projects</a
             ><a class="hover:text-or transition" href="clients.html">Clients</a
-            ><a class="hover:text-or transition" href="contact.html">Contact</a
-            ><a class="hover:text-or transition" href="MRUDA_Brochure.pdf" target="_blank" rel="noopener">Brochure</a>
+            ><a class="hover:text-or transition" href="contact.html">Contact</a>
           </div>
         </div>
         <div class="text-sm space-y-2">
-          <h4 class="font-disp text-white mb-4">Contact</h4>
+          <h4 class="font-disp text-brn mb-4">Contact</h4>
           <p>+91 99875 15657</p>
           <p class="break-all">technical@mrudageo.com</p>
           <p>Thane | Satara, Maharashtra</p>
@@ -439,7 +421,7 @@
       </div>
       <div class="strata h-1"></div>
       <div
-        class="max-w-7xl mx-auto px-5 py-5 flex flex-col sm:flex-row gap-2 justify-between items-center text-xs text-white/60"
+        class="max-w-7xl mx-auto px-5 py-5 flex flex-col sm:flex-row gap-2 justify-between items-center text-xs text-brn/60"
       >
         <p>
           © <span id="yr"></span> MRUDA Geotech Consultants. All rights
@@ -451,7 +433,7 @@
             href="https://jijausoftwares.in/"
             target="_blank"
             rel="noopener"
-            class="text-or font-medium hover:text-white transition"
+            class="text-or font-medium hover:text-brn transition"
             >Jijau Softwares</a
           >
         </p>

@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -35,7 +35,7 @@
     <!-- NAV -->
     <header
       id="nav"
-      class="fixed inset-x-0 z-50 transition-all duration-300"
+      class="fixed inset-x-0 z-50 bg-cream/95 backdrop-blur shadow-md transition-all duration-300"
       style="top: env(safe-area-inset-top, 0px)"
     >
       <div
@@ -87,17 +87,7 @@
     <!-- HERO -->
     <section
       id="home"
-      class="relative min-h-screen flex items-center overflow-hidden text-white"
-      style="
-        background:
-          linear-gradient(
-            110deg,
-            rgba(43, 26, 16, 0.95) 15%,
-            rgba(74, 44, 26, 0.8) 55%,
-            rgba(181, 74, 31, 0.45)
-          ),
-          url(assets/hero.jpg) center/cover;
-      "
+      class="home-hero relative min-h-screen flex items-center overflow-hidden text-brn"
     >
       <svg
         class="absolute -right-40 -top-20 w-[720px] opacity-25 pointer-events-none hidden md:block"
@@ -123,7 +113,7 @@
       >
         <div class="reveal in">
           <span
-            class="inline-flex items-center gap-2 text-xs tracking-[.25em] uppercase bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-5"
+            class="inline-flex items-center gap-2 text-xs tracking-[.25em] uppercase bg-white border border-sand rounded-full px-4 py-2 mb-5"
             ><span class="w-2 h-2 rounded-full bg-or animate-pulse"></span
             >Established in 2018 · PAN-India</span
           >
@@ -139,7 +129,7 @@
             <span class="text-or">Ground Stability</span>
           </h1>
           <p
-            class="mt-6 text-white/80 text-base sm:text-lg max-w-xl font-light leading-relaxed"
+            class="mt-6 text-brn/80 text-base sm:text-lg max-w-xl font-light leading-relaxed"
           >
             MRUDA Geotech is a firm founded with a vision to provide reliable,
             innovative and practical solutions to all your geotechnical problems.
@@ -148,32 +138,31 @@
           </p>
           <div class="mt-9 flex flex-wrap gap-4">
             <a href="about.html" class="btn btn-p">Learn More →</a>
-            <a href="MRUDA_Brochure.pdf" target="_blank" rel="noopener" class="btn btn-o"><i class="fa-regular fa-file-pdf"></i> View Brochure</a>
           </div>
           <div class="mt-12 grid grid-cols-3 gap-4 max-w-md">
             <div>
               <div class="font-disp text-3xl text-or">
                 <span data-c="20">0</span>+
               </div>
-              <div class="text-xs text-white/70">Years of expertise</div>
+              <div class="text-xs text-brn/70">Years of expertise</div>
             </div>
             <div>
               <div class="font-disp text-3xl text-or">
                 <span data-c="8">0</span>
               </div>
-              <div class="text-xs text-white/70">Core services</div>
+              <div class="text-xs text-brn/70">Core services</div>
             </div>
             <div>
               <div class="font-disp text-3xl text-or">
                 <span data-c="40">0</span>+
               </div>
-              <div class="text-xs text-white/70">Esteemed clients</div>
+              <div class="text-xs text-brn/70">Esteemed clients</div>
             </div>
           </div>
         </div>
         <div class="relative hidden lg:flex justify-center reveal in">
           <div
-            class="arch overflow-hidden w-[380px] h-[500px] border-[10px] border-white/15 shadow-2xl fl"
+            class="arch overflow-hidden w-[380px] h-[500px] border-[10px] border-white shadow-2xl fl"
           >
             <img
               src="assets/rig.jpg"
@@ -202,13 +191,13 @@
       </div>
       <a
         href="#services-preview"
-        class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 text-xs tracking-widest animate-bounce"
+        class="absolute bottom-6 left-1/2 -translate-x-1/2 text-brn/70 text-xs tracking-widest animate-bounce"
         >SCROLL ↓</a
       >
     </section>
 
     <!-- TAGLINE / BANNER -->
-    <section class="py-14 bg-dk text-white relative overflow-hidden">
+    <section class="py-14 bg-cream text-brn relative overflow-hidden">
       <div class="absolute inset-0 opacity-10 bg-tex"></div>
       <div class="relative max-w-6xl mx-auto px-5 grid md:grid-cols-[1fr_auto] gap-6 items-center">
         <div class="reveal">
@@ -216,7 +205,7 @@
             Specialized in <span class="text-or">8 core services</span> delivering
             end-to-end geotechnical solutions
           </div>
-          <p class="mt-2 text-white/70 text-sm sm:text-base">
+          <p class="mt-2 text-brn/75 text-sm sm:text-base">
             Ground Improvement · Slope Stabilization · Reinforced Soil Walls ·
             Geotechnical Investigation · Foundation Engineering · Geosynthetics ·
             Retaining Solutions &amp; more.
@@ -224,13 +213,6 @@
         </div>
         <div class="reveal flex flex-wrap gap-3">
           <a href="projects.html" class="btn btn-p">Explore Work →</a>
-          <a
-            href="MRUDA_Brochure.pdf"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-o"
-            >📄 Brochure</a
-          >
         </div>
       </div>
     </section>
@@ -275,10 +257,10 @@
             />
           </div>
           <div
-            class="absolute -bottom-6 -right-2 sm:right-6 bg-brn text-white rounded-2xl p-5 shadow-xl max-w-[220px]"
+            class="absolute -bottom-6 -right-2 sm:right-6 bg-cream text-brn rounded-2xl p-5 shadow-xl max-w-[220px]"
           >
             <div class="font-disp text-3xl text-or">2018</div>
-            <div class="text-sm text-white/80">
+            <div class="text-sm text-brn/75">
               Founded with a vision for reliable, innovative &amp; practical
               geotechnical solutions.
             </div>
@@ -322,13 +304,6 @@
           </div>
           <div class="mt-8 flex flex-wrap gap-4">
             <a href="about.html" class="btn btn-p">Read About Us →</a>
-            <a
-              href="MRUDA_Brochure.pdf"
-              target="_blank"
-              rel="noopener"
-              class="card inline-flex items-center gap-2 border border-sand bg-white text-brn rounded-full px-5 py-3 font-medium hover:border-or"
-              ><i class="fa-regular fa-file-pdf"></i> Download Brochure</a
-            >
           </div>
         </div>
       </div>
@@ -440,24 +415,24 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-16 bg-dk text-white relative overflow-hidden">
+    <section class="py-16 bg-sand/70 text-brn relative overflow-hidden">
       <div class="absolute inset-0 opacity-10 bg-tex"></div>
       <div class="relative max-w-5xl mx-auto px-5 text-center reveal">
         <h2 class="font-disp font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight">
           Ready to build on <span class="text-or">solid ground?</span>
         </h2>
-        <p class="mt-4 text-white/75 text-base sm:text-lg max-w-2xl mx-auto">
+        <p class="mt-4 text-brn/75 text-base sm:text-lg max-w-2xl mx-auto">
           Get in touch with our geotechnical experts for a consultation on your next infrastructure project.
         </p>
         <div class="mt-8 flex flex-wrap gap-4 justify-center">
           <a href="contact.html" class="btn btn-p">Get a Consultation <i class="fa-solid fa-arrow-right"></i></a>
-          <a href="clients.html" class="btn btn-o"><i class="fa-solid fa-users"></i> Our Clients</a>
+          <a href="clients.html" class="btn btn-o border-brn text-brn"><i class="fa-solid fa-users"></i> Our Clients</a>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="site-footer text-white/80">
+    <footer class="site-footer">
       <div class="max-w-7xl mx-auto px-5 py-10 grid md:grid-cols-3 footer-grid">
         <div>
           <img
@@ -465,31 +440,23 @@
             alt="MRUDA"
             class="h-16 bg-cream rounded-xl p-2"
           />
-          <p class="mt-4 text-sm text-white/60">
+          <p class="mt-4 text-sm text-brn/60">
             Bridging the gap between your infrastructure dreams and reality.
             Geotechnical consultancy since 2018.
           </p>
-          <a
-            href="MRUDA_Brochure.pdf"
-            target="_blank"
-            rel="noopener"
-            class="footer-cta"
-            ><i class="fa-regular fa-file-pdf"></i> Download Company Brochure (PDF)</a
-          >
         </div>
         <div>
-          <h4 class="font-disp text-white mb-4">Quick Links</h4>
+          <h4 class="font-disp text-brn mb-4">Quick Links</h4>
           <div class="grid grid-cols-2 gap-2 text-sm">
             <a class="hover:text-or transition" href="index.html">Home</a
             ><a class="hover:text-or transition" href="about.html">About</a
             ><a class="hover:text-or transition" href="projects.html">Projects</a
             ><a class="hover:text-or transition" href="clients.html">Clients</a
-            ><a class="hover:text-or transition" href="contact.html">Contact</a
-            ><a class="hover:text-or transition" href="MRUDA_Brochure.pdf">Brochure</a>
+            ><a class="hover:text-or transition" href="contact.html">Contact</a>
           </div>
         </div>
         <div class="text-sm space-y-2">
-          <h4 class="font-disp text-white mb-4">Contact</h4>
+          <h4 class="font-disp text-brn mb-4">Contact</h4>
           <p>+91 99875 15657</p>
           <p class="break-all">technical@mrudageo.com</p>
           <p>Thane | Satara, Maharashtra</p>
@@ -500,7 +467,7 @@
       </div>
       <div class="strata h-1"></div>
       <div
-        class="max-w-7xl mx-auto px-5 py-5 flex flex-col sm:flex-row gap-2 justify-between items-center text-xs text-white/60"
+        class="max-w-7xl mx-auto px-5 py-5 flex flex-col sm:flex-row gap-2 justify-between items-center text-xs text-brn/60"
       >
         <p>
           © <span id="yr"></span> MRUDA Geotech Consultants. All rights
@@ -512,7 +479,7 @@
             href="https://jijausoftwares.in/"
             target="_blank"
             rel="noopener"
-            class="text-or font-medium hover:text-white transition"
+            class="text-or font-medium hover:text-brn transition"
             >Jijau Softwares</a
           >
         </p>

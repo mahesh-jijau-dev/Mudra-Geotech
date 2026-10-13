@@ -56,31 +56,14 @@ body {
 }
 
 .site-footer {
-    background: #2B1A10;
+    background: #FBF6F0;
+    color: rgba(74, 44, 26, .8);
+    border-top: 1px solid #F1E6DA;
 }
 
 .site-footer .footer-grid {
-    gap: 2rem
-}
-
-.site-footer .footer-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: .5rem;
-    margin-top: 1rem;
-    padding: .75rem 1rem;
-    border-radius: 999px;
-    background: rgba(217, 105, 45, .12);
-    border: 1px solid rgba(217, 105, 45, .35);
-    color: #F7A66D;
-    font-size: .875rem;
-    font-weight: 500
-}
-
-.site-footer .footer-cta:hover {
-    background: #D9692D;
-    color: #fff;
-    border-color: #D9692D
+    gap: 2rem;
+    align-items: start;
 }
 
 .btn {
@@ -108,13 +91,13 @@ body {
 }
 
 .btn-o {
-    border: 1.5px solid #fff;
-    color: #fff
+    border: 1.5px solid #4A2C1A;
+    color: #4A2C1A
 }
 
 .btn-o:hover {
-    background: #fff;
-    color: #4A2C1A
+    background: #D9692D;
+    color: #fff
 }
 
 .nl {
@@ -148,7 +131,7 @@ body {
 }
 
 .strata {
-    background: linear-gradient(90deg, #D9692D, #B54A1F, #4A2C1A, #2B1A10)
+    background: linear-gradient(90deg, #D9692D, #E9874A, #F2A36F)
 }
 
 .dash {
@@ -200,6 +183,15 @@ body {
     font-family: Cinzel, serif;
     font-weight: 700;
     color: #4A2C1A
+}
+
+.page-hero {
+    color: #4A2C1A;
+    background: linear-gradient(135deg, #FBF6F0, #F1E6DA);
+}
+
+.home-hero {
+    background: linear-gradient(120deg, #FBF6F0 0%, #FBF6F0 55%, #F1E6DA 100%);
 }
 
 .bg-tex {
