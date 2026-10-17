@@ -50,6 +50,7 @@
         >
           <a class="nl act" href="index.html">Home</a
           ><a class="nl" href="about.html">About</a
+          ><a class="nl" href="services.html">Services</a
           ><a class="nl" href="projects.html">Projects</a
           ><a class="nl" href="clients.html">Clients</a
           ><a class="nl" href="contact.html">Contact</a
@@ -79,7 +80,7 @@
         class="lg:hidden hidden bg-cream/95 backdrop-blur border-t border-sand px-5 py-4 flex-col gap-4 text-brn font-medium"
       >
         <a href="index.html">Home</a><a href="about.html">About</a
-        ><a href="projects.html">Projects</a><a href="clients.html">Clients</a
+        ><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="clients.html">Clients</a
         ><a href="contact.html">Contact</a>
       </div>
     </header>
@@ -87,111 +88,65 @@
     <!-- HERO -->
     <section
       id="home"
-      class="home-hero relative min-h-screen flex items-center overflow-hidden text-brn"
+      class="home-hero relative min-h-screen flex items-center overflow-hidden text-white"
     >
-      <svg
-        class="absolute -right-40 -top-20 w-[720px] opacity-25 pointer-events-none hidden md:block"
-        viewBox="0 0 400 400"
-        fill="none"
-        stroke="#D9692D"
-        stroke-width="3"
-      >
-        <path class="dash" d="M40 380V200a160 160 0 0 1 320 0v180" />
-        <path
-          class="dash"
-          d="M90 380V200a110 110 0 0 1 220 0v180"
-          style="animation-delay: 0.4s"
+      <div class="hero-slides absolute inset-0" aria-hidden="true">
+        <img
+          class="hero-slide hero-slide-one"
+          src="assets/new/Nanded%20project/DJI_0926.JPG"
+          alt=""
+          fetchpriority="high"
         />
-        <path
-          class="dash"
-          d="M140 380V200a60 60 0 0 1 120 0v180"
-          style="animation-delay: 0.8s"
-        />
-      </svg>
+        <img class="hero-slide hero-slide-two" src="assets/new/Slope.Staility-slider-1.jpeg" alt="" />
+        <img class="hero-slide hero-slide-three" src="assets/new/WhatsApp%20Image%202026-01-18%20at%2012.13.50%20PM.jpeg" alt="" />
+      </div>
+      <div class="hero-shade absolute inset-0" aria-hidden="true"></div>
       <div
-        class="relative max-w-7xl mx-auto px-5 pt-32 pb-20 grid lg:grid-cols-2 gap-14 items-center w-full"
+        class="relative max-w-7xl mx-auto px-5 pt-32 pb-24 w-full"
       >
-        <div class="reveal in">
-          <span
-            class="inline-flex items-center gap-2 text-xs tracking-[.25em] uppercase bg-white border border-sand rounded-full px-4 py-2 mb-5"
-            ><span class="w-2 h-2 rounded-full bg-or animate-pulse"></span
-            >Established in 2018 · PAN-India</span
-          >
-          <div
-            class="text-xs sm:text-sm font-medium tracking-widest text-or/90 mb-4 uppercase"
-          >
+        <div class="max-w-3xl">
+          <span class="hero-reveal hero-reveal-one inline-flex items-center gap-2 text-xs tracking-[.25em] uppercase border border-white/30 bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+            <span class="w-2 h-2 rounded-full bg-or animate-pulse"></span>
+            Established in 2018 · PAN-India
+          </span>
+          <div class="hero-reveal hero-reveal-two text-xs sm:text-sm font-medium tracking-widest text-orange-200 mb-4 uppercase">
             A Gap Between Your Infrastructure Dreams &amp; Reality
           </div>
-          <h1
-            class="font-disp text-4xl sm:text-5xl xl:text-6xl font-bold leading-tight"
-          >
+          <h1 class="hero-reveal hero-reveal-three font-disp text-4xl sm:text-6xl xl:text-7xl font-bold leading-tight">
             Where <span class="font-light italic">Technical Depth</span> Meets
-            <span class="text-or">Ground Stability</span>
+            <span class="text-orange-300">Ground Stability</span>
           </h1>
-          <p
-            class="mt-6 text-brn/80 text-base sm:text-lg max-w-xl font-light leading-relaxed"
-          >
-            MRUDA Geotech is a firm founded with a vision to provide reliable,
-            innovative and practical solutions to all your geotechnical problems.
-            We deliver quality engineering solutions for infrastructure &amp; civil
-            engineering projects with specialization in roads &amp; highways.
+          <p class="hero-reveal hero-reveal-four mt-6 text-white/85 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+            Reliable, practical geotechnical engineering for infrastructure
+            projects, with a specialization in roads and highways.
           </p>
-          <div class="mt-9 flex flex-wrap gap-4">
-            <a href="about.html" class="btn btn-p">Learn More →</a>
-          </div>
-          <div class="mt-12 grid grid-cols-3 gap-4 max-w-md">
-            <div>
-              <div class="font-disp text-3xl text-or">
-                <span data-c="20">0</span>+
-              </div>
-              <div class="text-xs text-brn/70">Years of expertise</div>
-            </div>
-            <div>
-              <div class="font-disp text-3xl text-or">
-                <span data-c="8">0</span>
-              </div>
-              <div class="text-xs text-brn/70">Core services</div>
-            </div>
-            <div>
-              <div class="font-disp text-3xl text-or">
-                <span data-c="40">0</span>+
-              </div>
-              <div class="text-xs text-brn/70">Esteemed clients</div>
-            </div>
+          <div class="hero-reveal hero-reveal-five mt-9 flex flex-wrap gap-4">
+            <a href="projects.html" class="btn btn-p">Explore Our Projects <span aria-hidden="true">→</span></a>
+            <a href="contact.html" class="btn hero-btn-secondary">Discuss Your Project <span aria-hidden="true">→</span></a>
           </div>
         </div>
-        <div class="relative hidden lg:flex justify-center reveal in">
-          <div
-            class="arch overflow-hidden w-[380px] h-[500px] border-[10px] border-white shadow-2xl fl"
-          >
-            <img
-              src="assets/rig.jpg"
-              alt="Geotechnical drilling rig"
-              class="w-full h-full object-cover"
-            />
+        <div class="hero-reveal hero-reveal-five mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl border-t border-white/30 pt-6">
+          <div>
+            <div class="font-disp text-3xl text-orange-300"><span data-c="20">0</span>+</div>
+            <div class="text-xs text-white/75">Years of expertise</div>
           </div>
-          <div
-            class="arch overflow-hidden w-40 h-52 border-[6px] border-or absolute -left-2 bottom-4 shadow-xl fl"
-            style="animation-delay: 1.5s"
-          >
-            <img
-              src="assets/slope.jpg"
-              alt="Slope stabilization"
-              class="w-full h-full object-cover"
-            />
+          <div>
+            <div class="font-disp text-3xl text-orange-300"><span data-c="8">0</span></div>
+            <div class="text-xs text-white/75">Core services</div>
           </div>
-          <div
-            class="absolute -right-2 top-10 bg-cream text-brn rounded-2xl px-5 py-4 shadow-xl fl"
-            style="animation-delay: 0.8s"
-          >
-            <div class="font-disp text-2xl text-rust">Thane | Satara</div>
-            <div class="text-xs">Maharashtra, India</div>
+          <div>
+            <div class="font-disp text-3xl text-orange-300"><span data-c="70">0</span>+</div>
+            <div class="text-xs text-white/75">Esteemed clients</div>
+          </div>
+          <div>
+            <div class="font-disp text-3xl text-orange-300"><span data-c="100">0</span>+</div>
+            <div class="text-xs text-white/75">Projects delivered</div>
           </div>
         </div>
       </div>
       <a
         href="#services-preview"
-        class="absolute bottom-6 left-1/2 -translate-x-1/2 text-brn/70 text-xs tracking-widest animate-bounce"
+        class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/75 text-xs tracking-widest animate-bounce"
         >SCROLL ↓</a
       >
     </section>
@@ -238,7 +193,7 @@
           class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
         ></div>
         <div class="mt-12 text-center reveal">
-          <a href="about.html#services" class="btn btn-p">View Full Details →</a>
+          <a href="services.html" class="btn btn-p">Explore All Services →</a>
         </div>
       </div>
     </section>
@@ -251,7 +206,7 @@
         <div class="reveal relative">
           <div class="arch overflow-hidden h-[420px] sm:h-[520px] shadow-xl">
             <img
-              src="assets/hero.jpg"
+              src="assets/new/Nanded%20project/DJI_0925.JPG"
               alt="Highway project"
               class="w-full h-full object-cover"
             />
@@ -404,12 +359,183 @@
             foundations.
           </p>
         </div>
+        <p class="mt-4 text-center text-xs text-brn/60">
+          Illustrative sample content only; details are not verified MRUDA project records.
+        </p>
         <div
-          id="gal-preview"
-          class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[170px] sm:auto-rows-[200px]"
+          id="featured-cases"
+          class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-start"
         ></div>
         <div class="mt-12 text-center reveal">
-          <a href="projects.html" class="btn btn-p">View All Projects →</a>
+          <a href="projects.html#case-studies" class="btn btn-p">Explore All Case Studies →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GEOTECHNICAL CROSS-SECTION -->
+    <section id="ground-profile" class="py-24 bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-5">
+        <div class="text-center max-w-3xl mx-auto reveal">
+          <p class="text-or font-medium tracking-[.25em] text-xs uppercase mb-3">
+            Below the surface
+          </p>
+          <h2 class="sec-t text-3xl sm:text-4xl">From Ground Investigation to Foundation</h2>
+          <div class="mt-3 h-1 w-20 strata rounded mx-auto"></div>
+          <p class="mt-4 text-brn/70">
+            Explore how subsurface investigation informs geotechnical design.
+          </p>
+        </div>
+        <div class="ground-profile mt-12 grid lg:grid-cols-[1.25fr_.75fr] gap-10 items-center">
+          <div class="ground-illustration reveal">
+            <svg class="ground-svg" viewBox="0 0 900 500" role="img" aria-labelledby="ground-title ground-desc">
+              <title id="ground-title">Illustrative geotechnical ground cross-section</title>
+              <desc id="ground-desc">A building foundation and borehole pass through topsoil, soft soil, dense soil and weathered rock to bedrock.</desc>
+              <defs>
+                <pattern id="soil-grain" width="26" height="18" patternUnits="userSpaceOnUse">
+                  <circle cx="3" cy="5" r="1.2" fill="#76533c" opacity=".28" />
+                  <circle cx="16" cy="13" r="1" fill="#76533c" opacity=".24" />
+                  <path d="m21 3 3 2" stroke="#76533c" stroke-opacity=".2" />
+                </pattern>
+                <pattern id="rock-hatch" width="20" height="18" patternUnits="userSpaceOnUse">
+                  <path d="m0 14 8-5 5 3 7-8M-4 5l5-4" fill="none" stroke="#fff5eb" stroke-opacity=".32" stroke-width="2" />
+                </pattern>
+              </defs>
+              <path class="ground-layer layer-bedrock" d="M0 392 108 372l93 13 112-25 110 20 115-16 103 17 120-23 139 18v124H0z" />
+              <path class="ground-layer layer-weathered" d="M0 324 110 310l110 20 100-17 103 24 105-14 100 21 110-18 162 22v45l-139-18-120 23-103-17-115 16-110-20-112 25-93-13L0 392z" />
+              <path class="ground-layer layer-dense" d="M0 244h900v80l-162-22-110 18-100-21-105 14-103-24-100 17-110-20L0 324z" />
+              <path class="ground-layer layer-soft" d="M0 170h900v74H0z" />
+              <path class="ground-layer layer-topsoil" d="M0 130h900v40H0z" />
+              <path class="ground-groundline" d="M0 130h900" />
+              <path class="ground-pattern" d="M0 170h900v74H0zm0 74h900v80H0zm0 80h900v68H0zm0 68h900v110H0z" />
+              <g class="ground-structure">
+                <path d="M345 130V76h112v54m-132 0h152m-137 0 15 18h112l15-18m-102 18v75m62-75v75m-74 0h86l14 18H364z" />
+                <path d="M375 76V47h53v29m-42-29V34h31v13" />
+                <path d="M363 221v31m78-31v31" />
+              </g>
+              <g class="ground-borehole">
+                <path d="M676 130v296m-8-296v-35h16v35m-10 38h4m-4 42h4m-4 42h4m-4 42h4m-4 42h4m-4 42h4m-4 42h4" />
+                <circle cx="676" cy="426" r="7" />
+              </g>
+              <g class="ground-annotations">
+                <path d="M84 151h114m-114 0v-9m0 9v9M84 207h114m-114 0v-9m0 9v9M84 280h114m-114 0v-9m0 9v9M84 354h114m-114 0v-9m0 9v9M84 433h114m-114 0v-9m0 9v9" />
+                <text x="208" y="155">TOPSOIL</text>
+                <text x="208" y="211">SOFT SOIL</text>
+                <text x="208" y="284">DENSE SOIL</text>
+                <text x="208" y="358">WEATHERED ROCK</text>
+                <text x="208" y="437">BEDROCK</text>
+                <text x="687" y="113">BOREHOLE</text>
+                <text x="472" y="232">FOUNDATION</text>
+              </g>
+            </svg>
+            <p class="mt-3 text-xs text-brn/55">Illustrative engineering diagram · not to scale</p>
+          </div>
+          <div class="reveal">
+            <div class="ground-tabs" role="tablist" aria-label="Ground engineering stages">
+              <button class="ground-tab is-active" id="ground-tab-investigation" type="button" role="tab" aria-selected="true" aria-controls="ground-panel" data-ground-tab="investigation">1. Investigate</button>
+              <button class="ground-tab" id="ground-tab-design" type="button" role="tab" aria-selected="false" aria-controls="ground-panel" data-ground-tab="design">2. Engineer</button>
+            </div>
+            <div id="ground-panel" class="ground-panel mt-6" role="tabpanel" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER PROFILE -->
+    <section id="founder-profile" class="py-24 bg-sand/60 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-5">
+        <div class="founder-profile reveal grid lg:grid-cols-[340px_1fr] gap-12 items-center">
+          <div class="founder-portrait">
+            <img src="assets/founder.jpg" alt="Er. Shubhada Jagtap, founder and consulting geotechnical engineer" loading="lazy" />
+            <span class="founder-experience"><strong>20+</strong><span>years of experience</span></span>
+          </div>
+          <div>
+            <p class="text-or font-medium tracking-[.25em] text-xs uppercase mb-3">Technical leadership</p>
+            <h2 class="sec-t text-3xl sm:text-4xl">Er. Shubhada Jagtap</h2>
+            <p class="mt-2 text-rust font-medium">Founder &amp; Consulting Geotechnical Engineer</p>
+            <p class="mt-5 max-w-3xl text-brn/75 leading-relaxed">
+              MRUDA is led by a geotechnical engineer with more than two decades
+              of experience in investigation, design and infrastructure engineering.
+            </p>
+            <div class="founder-credentials mt-7 grid sm:grid-cols-2 gap-3">
+              <div><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Civil Engineering graduate, Mumbai University · Merit list holder</span></div>
+              <div><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Master’s in Geotechnical Engineering, MSU Baroda</span></div>
+              <div><i class="fa-solid fa-award" aria-hidden="true"></i><span>Qualified GATE · former engineering lecturer</span></div>
+              <div><i class="fa-solid fa-earth-asia" aria-hidden="true"></i><span>IGS Life Member · Executive Member, IGS Mumbai Chapter</span></div>
+            </div>
+            <div class="founder-highlights mt-7">
+              <h3 class="font-disp font-bold text-brn">Technical highlights</h3>
+              <div class="mt-3 flex flex-wrap gap-2" role="group" aria-label="Founder technical highlights">
+                <button class="founder-highlight is-active" type="button" data-founder-highlight="expertise">Design expertise</button>
+                <button class="founder-highlight" type="button" data-founder-highlight="recognition">Recognition</button>
+                <button class="founder-highlight" type="button" data-founder-highlight="research">Technical work</button>
+              </div>
+              <p id="founder-highlight-copy" class="mt-4 text-sm text-brn/75 leading-relaxed" aria-live="polite"></p>
+            </div>
+            <a href="about.html#founder" class="btn btn-o mt-7">Read Full Profile <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS MILESTONE -->
+    <section id="awards-milestone" class="py-24 bg-cream overflow-hidden">
+      <div class="max-w-7xl mx-auto px-5">
+        <div class="awards-showcase reveal">
+          <div class="awards-showcase-feature">
+            <img
+              src="assets/new/Awards/WhatsApp%20Image%202024-09-14%20at%2011.30.00%20(1).jpeg"
+              alt="Recognition award presented to Er. Shubhada Jagtap"
+              loading="lazy"
+              data-lb
+            />
+            <span class="awards-image-badge">
+              <i class="fa-solid fa-award" aria-hidden="true"></i>
+              A proud milestone
+            </span>
+          </div>
+          <div class="awards-showcase-copy">
+            <p class="text-or font-medium tracking-[.25em] text-xs uppercase mb-3">
+              Awards &amp; recognition
+            </p>
+            <h2 class="sec-t text-3xl sm:text-4xl">
+              Celebrating a journey of <span class="text-or">achievement</span>
+            </h2>
+            <div class="mt-3 h-1 w-20 strata rounded"></div>
+            <p class="mt-5 text-brn/75 leading-relaxed">
+              Every recognition reflects years of dedication to geotechnical
+              engineering, technical excellence and contribution to the
+              profession.
+            </p>
+            <p class="mt-3 text-sm text-brn/65 leading-relaxed">
+              Er. Shubhada Jagtap’s professional profile also recognizes her
+              among the “75 Influential Women Geotechnical Engineers” featured
+              in <em>Daughters of Indian Soil</em>.
+            </p>
+            <div class="awards-showcase-thumbnails mt-7" aria-label="More awards and recognitions">
+              <img
+                src="assets/new/Awards/DSC01364.JPG"
+                alt="Award trophy presented to the founder"
+                loading="lazy"
+                data-lb
+              />
+              <img
+                src="assets/new/Awards/WhatsApp%20Image%202024-09-14%20at%2011.30.00.jpeg"
+                alt="Professional recognition trophy"
+                loading="lazy"
+                data-lb
+              />
+              <img
+                src="assets/new/Awards/WhatsApp%20Image%202024-09-14%20at%2011.30.01%20(1).jpeg"
+                alt="Framed certificate of recognition"
+                loading="lazy"
+                data-lb
+              />
+            </div>
+            <a href="about.html#awards" class="btn btn-p mt-7">
+              Explore Awards &amp; Milestones
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -450,6 +576,7 @@
           <div class="grid grid-cols-2 gap-2 text-sm">
             <a class="hover:text-or transition" href="index.html">Home</a
             ><a class="hover:text-or transition" href="about.html">About</a
+            ><a class="hover:text-or transition" href="services.html">Services</a
             ><a class="hover:text-or transition" href="projects.html">Projects</a
             ><a class="hover:text-or transition" href="clients.html">Clients</a
             ><a class="hover:text-or transition" href="contact.html">Contact</a>
@@ -472,16 +599,6 @@
         <p>
           © <span id="yr"></span> MRUDA Geotech Consultants. All rights
           reserved.
-        </p>
-        <p>
-          Designed &amp; Developed by
-          <a
-            href="https://jijausoftwares.in/"
-            target="_blank"
-            rel="noopener"
-            class="text-or font-medium hover:text-brn transition"
-            >Jijau Softwares</a
-          >
         </p>
       </div>
     </footer>

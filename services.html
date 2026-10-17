@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Geotechnical Services | MRUDA Geotech Consultants</title>
+    <meta
+      name="description"
+      content="Explore MRUDA Geotech Consultants' services in ground improvement, slope stabilization, reinforced soil walls, geotechnical investigation, foundation engineering and more."
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div
+      id="bar"
+      class="strata fixed left-0 h-1 z-[60]"
+      style="width: 0; top: env(safe-area-inset-top, 0px)"
+    ></div>
+
+    <header
+      id="nav"
+      class="fixed inset-x-0 z-50 bg-cream/95 backdrop-blur shadow-md transition-all duration-300"
+      style="top: env(safe-area-inset-top, 0px)"
+    >
+      <div class="max-w-7xl mx-auto px-5 flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="MRUDA logo" class="h-14 w-auto" />
+        </a>
+        <nav
+          class="hidden lg:flex items-center gap-8 text-sm font-medium"
+          id="links"
+        >
+          <a class="nl" href="index.html">Home</a>
+          <a class="nl" href="about.html">About</a>
+          <a class="nl act" href="services.html" aria-current="page">Services</a>
+          <a class="nl" href="projects.html">Projects</a>
+          <a class="nl" href="clients.html">Clients</a>
+          <a class="nl" href="contact.html">Contact</a>
+          <a href="contact.html" class="btn btn-p !py-2.5 !px-5">
+            Get a Consultation
+          </a>
+        </nav>
+        <button
+          id="burger"
+          aria-label="Menu"
+          class="lg:hidden w-11 h-11 rounded-full flex items-center justify-center bg-white/90 text-brn shadow"
+        >
+          <svg
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path id="bi" d="M3 6h16M3 11h16M3 16h16" />
+          </svg>
+        </button>
+      </div>
+      <div
+        id="mob"
+        class="lg:hidden hidden bg-cream/95 backdrop-blur border-t border-sand px-5 py-4 flex-col gap-4 text-brn font-medium"
+      >
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero relative pt-40 pb-20 overflow-hidden">
+        <div class="relative max-w-7xl mx-auto px-5 text-center reveal in">
+          <p class="text-or font-medium tracking-[.25em] text-xs uppercase mb-3">
+            What we do
+          </p>
+          <h1 class="font-disp text-4xl sm:text-5xl xl:text-6xl font-bold leading-tight">
+            Geotechnical <span class="text-or">Engineering Services</span>
+          </h1>
+          <p class="mt-4 text-brn/80 text-lg max-w-3xl mx-auto">
+            Practical engineering support for infrastructure and civil
+            engineering projects, with a specialization in roads and highways.
+          </p>
+          <div class="mt-8 inline-flex items-center gap-4 text-sm text-brn/70">
+            <a href="index.html" class="hover:text-or transition">Home</a>
+            <span>/</span>
+            <span class="text-brn">Services</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-tex">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="text-center max-w-2xl mx-auto reveal">
+            <p class="text-or font-medium tracking-[.25em] text-xs uppercase mb-3">
+              Our expertise
+            </p>
+            <h2 class="sec-t text-3xl sm:text-4xl">
+              Solutions from ground investigation to design
+            </h2>
+            <div class="mt-3 h-1 w-20 strata rounded mx-auto"></div>
+            <p class="mt-4 text-brn/70">
+              Select a service to start a conversation about your site
+              conditions, design needs and project requirements.
+            </p>
+          </div>
+          <div id="sv" class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-sand/60">
+        <div class="max-w-5xl mx-auto px-5 text-center reveal">
+          <h2 class="font-disp font-bold text-3xl sm:text-4xl leading-tight">
+            Need geotechnical input for your <span class="text-or">project?</span>
+          </h2>
+          <p class="mt-4 text-brn/75 text-base sm:text-lg max-w-2xl mx-auto">
+            Share your site and project requirements with the MRUDA team.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4 justify-center">
+            <a href="contact.html" class="btn btn-p">
+              Discuss Your Project <span aria-hidden="true">→</span>
+            </a>
+            <a href="projects.html" class="btn btn-o">
+              Explore Case Studies
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="max-w-7xl mx-auto px-5 py-10 grid md:grid-cols-3 footer-grid">
+        <div>
+          <img
+            src="assets/logo.png"
+            alt="MRUDA"
+            class="h-16 bg-cream rounded-xl p-2"
+          />
+          <p class="mt-4 text-sm text-brn/60">
+            Bridging the gap between your infrastructure dreams and reality.
+            Geotechnical consultancy since 2018.
+          </p>
+        </div>
+        <div>
+          <h2 class="font-disp text-brn mb-4">Quick Links</h2>
+          <div class="grid grid-cols-2 gap-2 text-sm">
+            <a class="hover:text-or transition" href="index.html">Home</a>
+            <a class="hover:text-or transition" href="about.html">About</a>
+            <a class="hover:text-or transition" href="services.html">Services</a>
+            <a class="hover:text-or transition" href="projects.html">Projects</a>
+            <a class="hover:text-or transition" href="clients.html">Clients</a>
+            <a class="hover:text-or transition" href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="text-sm space-y-2">
+          <h2 class="font-disp text-brn mb-4">Contact</h2>
+          <p>+91 99875 15657</p>
+          <p class="break-all">technical@mrudageo.com</p>
+          <p>Thane | Satara, Maharashtra</p>
+          <a href="https://www.mrudageo.com" class="text-or hover:underline">
+            www.mrudageo.com
+          </a>
+        </div>
+      </div>
+      <div class="strata h-1"></div>
+      <div
+        class="max-w-7xl mx-auto px-5 py-5 flex flex-col sm:flex-row gap-2 justify-between items-center text-xs text-brn/60"
+      >
+        <p>
+          © <span id="yr"></span> MRUDA Geotech Consultants. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
