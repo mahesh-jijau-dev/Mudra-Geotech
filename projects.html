@@ -138,7 +138,7 @@
     <section id="project-gallery" class="py-24 bg-tex">
       <div class="max-w-7xl mx-auto px-5">
         <div class="text-center max-w-3xl mx-auto reveal">
-          <p class="text-or font-medium tracking-[.25em] text-xs uppercase mb-3">
+          <p class="text-[#527f7a] font-medium tracking-[.25em] text-xs uppercase mb-3">
             From the field
           </p>
           <h2 class="sec-t text-3xl sm:text-4xl">Project Gallery</h2>
@@ -287,52 +287,23 @@
           <h2 class="sec-t text-3xl sm:text-4xl">Explore the Map</h2>
           <div class="mt-3 h-1 w-20 strata rounded mx-auto"></div>
           <p class="mt-4 text-brn/70">
-            Select a sample pin to preview a case study.
+            Select a sample pin to preview an illustrative case study.
           </p>
         </div>
-        <p class="map-disclaimer reveal mt-8 mx-auto max-w-3xl rounded-xl border border-or/20 bg-white/80 px-5 py-4 text-center text-sm text-brn/75">
-          <strong class="text-rust">Illustrative map preview:</strong> all pins
-          and project locations below are placeholders, not verified MRUDA
-          project records. State divisions are schematic. Replace with confirmed
-          locations before publishing.
+        <p class="map-disclaimer reveal mt-8 mx-auto max-w-3xl rounded-xl border border-[#9ab3ad]/40 bg-white/80 px-5 py-4 text-center text-sm text-brn/75">
+          <strong class="text-[#527f7a]">Illustrative map preview:</strong> this
+          political map shows India's state and union territory boundaries.
+          Kashmir's territorial status is disputed. Pins are approximate sample
+          locations only and are not verified MRUDA project records.
         </p>
         <div class="mt-12 grid lg:grid-cols-[1fr_1fr] gap-10 items-center">
-          <div class="map-stage reveal" aria-label="Illustrative map of India with sample project pins">
-            <svg class="india-map" viewBox="0 0 600 640" role="img" aria-labelledby="india-map-title india-map-desc">
-              <title id="india-map-title">Illustrative India project map</title>
-              <desc id="india-map-desc">A stylized India silhouette with sample, unverified project locations.</desc>
-              <defs>
-                <linearGradient id="india-fill" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#f8bd82" />
-                  <stop offset="1" stop-color="#d9692d" />
-                </linearGradient>
-                <pattern id="india-facets" width="48" height="42" patternUnits="userSpaceOnUse">
-                  <path d="M0 0 24 21 48 0M0 42 24 21 48 42M0 0v42M48 0v42" fill="none" stroke="#fff4e8" stroke-opacity=".22" stroke-width="1" />
-                  <circle cx="24" cy="21" r="1.8" fill="#fff4e8" fill-opacity=".65" />
-                </pattern>
-                <clipPath id="india-clip">
-                  <path d="m139 106 27-31 49-21 41-15 49 9 34 18 31 3 28 27 26 12 23 25 28 8 31 26-22 17-36-8-18 23-18 35-26 19-12 32-20 20-13 40-18 25-11 41-26 42-13 51-25 53-24 28-20-37-17-48-24-45-19-40-24-42-11-39-21-32-15-45-19-31-17-42 4-39 15-28 2-37Z" />
-                </clipPath>
-              </defs>
-              <path class="india-outline" d="m139 106 27-31 49-21 41-15 49 9 34 18 31 3 28 27 26 12 23 25 28 8 31 26-22 17-36-8-18 23-18 35-26 19-12 32-20 20-13 40-18 25-11 41-26 42-13 51-25 53-24 28-20-37-17-48-24-45-19-40-24-42-11-39-21-32-15-45-19-31-17-42 4-39 15-28 2-37Z" />
-              <path class="india-texture" clip-path="url(#india-clip)" d="M80 20h500v630H80z" />
-              <g class="india-network" clip-path="url(#india-clip)">
-                <g class="india-states">
-                  <path class="india-state" data-state="Maharashtra" d="m192 273 41-9 46 10 38 32-13 42-41 18-48-17-32-31z" />
-                  <path class="india-state" data-state="Telangana" d="m304 348 42-13 37 28-8 37-30 21-34-27-16-27z" />
-                </g>
-                <path d="m130 180 120 22 112-71 113 84-85 108-110-31-104 92 90 94 91-83 90 72M250 202l26 90-94 92 104 9 6 95m70-357 6 134 73 53-64 115" />
-                <path d="m130 180 120 22 112-71 113 84-85 108-110-31-104 92 90 94 91-83 90 72M250 202l26 90-94 92 104 9 6 95m70-357 6 134 73 53-64 115" class="network-glow" />
-                <g class="india-stars">
-                  <path d="m251 202 5-11 5 11 11 5-11 5-5 11-5-11-11-5zM381 131l4-9 4 9 9 4-9 4-4 9-4-9-9-4zM275 292l4-9 4 9 9 4-9 4-4 9-4-9-9-4zM380 400l4-9 4 9 9 4-9 4-4 9-4-9-9-4zM301 514l4-9 4 9 9 4-9 4-4 9-4-9-9-4z" />
-                </g>
-              </g>
-            </svg>
+          <div class="map-stage reveal">
+            <img
+              class="india-map"
+              src="assets/india-map.svg"
+              alt="Political map of India with state and union territory boundaries, including the northern extent of Ladakh and Jammu and Kashmir"
+            />
             <div id="map-markers" class="map-markers"></div>
-            <span class="map-label map-label-north">NORTH</span>
-            <span class="map-label map-label-south">SOUTH</span>
-            <span class="map-label map-label-west">WEST</span>
-            <span class="map-label map-label-east">EAST</span>
           </div>
           <div id="map-preview" class="map-preview reveal" aria-live="polite"></div>
         </div>
@@ -361,7 +332,7 @@
     <!-- FOOTER -->
     <footer class="site-footer">
       <div class="max-w-7xl mx-auto px-5 py-10 grid md:grid-cols-3 footer-grid">
-        <div>
+        <div class="reveal">
           <img
             src="assets/logo.png"
             alt="MRUDA"
@@ -372,7 +343,7 @@
             Geotechnical consultancy since 2018.
           </p>
         </div>
-        <div>
+        <div class="reveal">
           <h4 class="font-disp text-brn mb-4">Quick Links</h4>
           <div class="grid grid-cols-2 gap-2 text-sm">
             <a class="hover:text-or transition" href="index.html">Home</a
@@ -383,7 +354,7 @@
             ><a class="hover:text-or transition" href="contact.html">Contact</a>
           </div>
         </div>
-        <div class="text-sm space-y-2">
+        <div class="reveal text-sm space-y-2">
           <h4 class="font-disp text-brn mb-4">Contact</h4>
           <p>+91 99875 15657</p>
           <p class="break-all">technical@mrudageo.com</p>
@@ -395,7 +366,7 @@
       </div>
       <div class="strata h-1"></div>
       <div
-        class="max-w-7xl mx-auto px-5 py-5 flex flex-col sm:flex-row gap-2 justify-between items-center text-xs text-brn/60"
+        class="reveal max-w-7xl mx-auto px-5 py-5 flex flex-col sm:flex-row gap-2 justify-between items-center text-xs text-brn/60"
       >
         <p>
           © <span id="yr"></span> MRUDA Geotech Consultants. All rights

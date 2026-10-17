@@ -29,7 +29,7 @@ const caseStudies = [
       "Example scope: review available ground information, assess wall geometry and develop a reinforced-soil design concept.",
     deliverables:
       "Example outputs: design calculations, typical sections, reinforcement schedule and construction notes.",
-    mapPosition: { left: "47%", top: "51%" },
+    mapPosition: { left: "22.90%", top: "60.50%" },
   },
   {
     id: "case-borehole-investigation",
@@ -44,7 +44,7 @@ const caseStudies = [
       "Example scope: plan exploration locations, coordinate borehole logging and evaluate representative soil and rock data.",
     deliverables:
       "Example outputs: factual investigation report, interpreted ground profile and preliminary engineering recommendations.",
-    mapPosition: { left: "55%", top: "48%" },
+    mapPosition: { left: "38.84%", top: "52.38%" },
   },
   {
     id: "case-slope-stabilization",
@@ -59,7 +59,7 @@ const caseStudies = [
       "Example scope: review site conditions, assess slope stability and compare suitable protection or stabilization options.",
     deliverables:
       "Example outputs: stability assessment, recommended stabilization concept, drainage details and monitoring notes.",
-    mapPosition: { left: "44%", top: "54%" },
+    mapPosition: { left: "24.07%", top: "63.09%" },
   },
   {
     id: "case-retaining-structure",
@@ -74,7 +74,7 @@ const caseStudies = [
       "Example scope: assess design assumptions and review feasible retaining-system options against ground conditions.",
     deliverables:
       "Example outputs: stability checks, preliminary design parameters, concept details and construction considerations.",
-    mapPosition: { left: "56%", top: "59%" },
+    mapPosition: { left: "37.00%", top: "64.01%" },
   },
 ];
 
@@ -132,15 +132,12 @@ if (mapMarkers && mapPreview) {
       marker.classList.toggle("is-active", selected);
       marker.setAttribute("aria-pressed", String(selected));
     });
-    document.querySelectorAll(".india-state").forEach((region) => {
-      region.classList.toggle("is-active", region.dataset.state === state);
-    });
     mapPreview.innerHTML = `<div class="map-preview-image"><img src="${project.image}" alt="${project.alt}"></div>
       <div class="map-preview-content">
         <span class="case-sample-label">Illustrative sample</span>
         <p class="case-category mt-4">${project.category}</p>
         <h3 class="font-disp text-2xl text-brn mt-2">${project.title}</h3>
-        <p class="mt-2 text-xs font-medium uppercase tracking-wider text-rust">Sample state: ${state}</p>
+        <p class="mt-2 text-xs font-medium uppercase tracking-wider text-[#527f7a]">Sample state: ${state}</p>
         <p class="map-preview-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> ${project.location}</p>
         <p class="mt-4 text-sm text-brn/75">${project.challenge}</p>
         <a class="btn btn-p mt-6" href="projects.html#${project.id}">View case study <span aria-hidden="true">→</span></a>
@@ -149,7 +146,7 @@ if (mapMarkers && mapPreview) {
   mapMarkers.innerHTML = caseStudies
     .map(
       (project, index) =>
-        `<button class="map-marker${index === 0 ? " is-active" : ""}" type="button" style="left:${project.mapPosition.left};top:${project.mapPosition.top}" data-project="${project.id}" aria-label="Show illustrative ${project.title} sample near ${project.location}" aria-pressed="${index === 0}">
+        `<button class="map-marker${index === 0 ? " is-active" : ""}" type="button" style="left:${project.mapPosition.left};top:${project.mapPosition.top};--marker-delay:${index * 120}ms" data-project="${project.id}" aria-label="Show illustrative ${project.title} sample near ${project.location}" aria-pressed="${index === 0}">
           <span class="map-marker-pulse"></span><span class="map-marker-label">${project.location.split(" · ")[0]}</span>
         </button>`,
     )
