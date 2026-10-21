@@ -21,7 +21,7 @@ const caseStudies = [
     title: "Highway Reinforced Earth Wall",
     category: "Reinforced soil wall",
     location: "Pune, Maharashtra · sample location",
-    image: "assets/new/Nanded project/DJI_0925.JPG",
+    image: "assets/new/Nanded Reinforced Earth- Soil Wall Project/DJI_0926.webp",
     alt: "Illustrative reinforced soil wall along a highway",
     challenge:
       "Illustrative brief: create a stable highway embankment beside a constrained right-of-way and variable ground.",
@@ -36,7 +36,8 @@ const caseStudies = [
     title: "Borehole Investigation",
     category: "Geotechnical investigation",
     location: "Nagpur, Maharashtra · sample location",
-    image: "assets/new/Core.Box-BH-01.jpeg",
+    image:
+      "assets/new/Geotechnical Investigation Project- Seimens Mumbai/WhatsApp Image 2026-01-08 at 11.43.57 AM.jpeg",
     alt: "Illustrative geotechnical borehole investigation",
     challenge:
       "Illustrative brief: establish subsurface conditions and identify design parameters for a proposed infrastructure corridor.",
@@ -66,7 +67,8 @@ const caseStudies = [
     title: "Retaining Structure Assessment",
     category: "Retaining solutions",
     location: "Hyderabad, Telangana · sample location",
-    image: "assets/new/WhatsApp Image 2026-01-18 at 12.13.50 PM.jpeg",
+    image:
+      "assets/new/Gabion wall KumbhaRushi project/WhatsApp Image 2026-01-18 at 12.13.50 PM.webp",
     alt: "Illustrative retaining structure",
     challenge:
       "Illustrative brief: retain an elevation difference while accounting for earth pressure, groundwater and site constraints.",
@@ -254,38 +256,50 @@ if (fl) {
   ).join("");
 }
 const C = [
-  "NHAI – National Highways Authority of India",
-  "MMRDA – Mumbai Metropolitan Region Development Authority",
-  "MSRDC – Maharashtra State Road Development Corp.",
-  "PWD – Public Works Department",
-  "CPWD – Central Public Works Department",
-  "L&T Construction",
-  "KPML",
-  "IRB Infrastructure Developers Ltd.",
-  "Ashoka Buildcon Ltd.",
-  "Gammon India Ltd.",
-  "HCC – Hindustan Construction Company",
-  "Simplex Infrastructures Ltd.",
-  "KNK Construction Pvt. Ltd.",
-  "NCC Ltd.",
-  "Soma Enterprise Ltd.",
-  "B L Kashyap & Sons Ltd.",
-  "Mapro",
-  "VJTI – Veermata Jijabai Technological Institute",
-  "Tata Projects Ltd.",
-  "Afcons Infrastructure Ltd.",
-  "Konark Infrastructures Ltd. / KDMC",
-  "B & S Engineering Consultants Pvt. Ltd.",
-  "Stup Consultants Pvt. Ltd.",
-  "Aarvee Associates Architects & Engineers",
-  "The Louis Berger Group Inc.",
-  "Halcrow Consulting India Ltd.",
+  "Picture5.jpg",
+  "Picture6.jpg",
+  "Picture7.png",
+  "Picture8.png",
+  "Picture9.png",
+  "Picture10.png",
+  "Picture11.svg",
+  "Picture12.jpg",
+  "Picture13.jpg",
+  "Picture14.jpg",
+  "Picture15.png",
+  "Picture16.png",
+  "Picture17.jpg",
+  "Picture18.jpg",
+  "Picture19.jpg",
+  "Picture20.jpg",
+  "Picture21.jpg",
+  "Picture22.svg",
+  "Picture23.jpg",
+  "Picture24.jpg",
+  "Picture25.png",
+  "Picture26.jpg",
+  "Picture27.png",
+  "Picture28.png",
+  "Picture29.png",
+  "Picture30.png",
+  "Picture31.png",
+  "Picture32.png",
+  "Picture33.png",
+  "Picture34.png",
+  "Picture35.png",
+  "Picture36.png",
+  "Picture37.png",
+  "Picture38.png",
+  "Picture39.jpg",
+  "Picture40.png",
+  "Picture41.png",
+  "Picture42.png",
 ];
 const cl = document.getElementById("cl");
 if (cl) {
   cl.innerHTML = C.map(
-    (c) =>
-      `<span class="reveal card bg-white border border-sand rounded-full px-5 py-2.5 text-sm text-brn font-medium">${c}</span>`,
+    (c, index) =>
+      `<figure class="reveal client-logo-card" aria-label="Client logo ${index + 1}"><img src="assets/new/clients/${c}" alt="Client logo ${index + 1}" loading="lazy" /></figure>`,
   ).join("");
 }
 const yr = document.getElementById("yr");
@@ -358,6 +372,112 @@ if (sectionLinks.length > 0 && pageSections.length > 0) {
     { rootMargin: "-45% 0px -50% 0px" },
   );
   pageSections.forEach((s) => sp.observe(s));
+}
+const projectSlideshow = document.querySelector("[data-project-slideshow]");
+if (projectSlideshow) {
+  const slides = [
+    { src: "assets/new/BH-4.jpeg", alt: "Geotechnical field photograph; project details not available" },
+    { src: "assets/new/Core.Box-BH-01.jpeg", alt: "Geotechnical core samples; project details not available" },
+    { src: "assets/new/Field tests.jpeg", alt: "Geotechnical field testing; project details not available" },
+    { src: "assets/new/Karanje-Satara.jpeg", alt: "Site photograph; project details not available" },
+    { src: "assets/new/Satara.jpeg", alt: "Site photograph; project details not available" },
+    { src: "assets/new/Shore.pile.webp", alt: "Shoring site photograph; project details not available" },
+    { src: "assets/new/Shubhada-on.site.jpeg", alt: "Site visit photograph; project details not available" },
+    { src: "assets/new/Slope.Staility-slider-1.jpeg", alt: "Slope site photograph; project details not available" },
+    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.09 PM (4).jpeg", alt: "Geotechnical site photograph; project details not available" },
+    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.09 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
+    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.10 PM (1).jpeg", alt: "Geotechnical site photograph; project details not available" },
+    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.10 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
+    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.17.46 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
+    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.18.08 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
+    { src: "assets/new/WhatsApp Image 2026-10-17 at 12.32.33 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
+  ];
+  const image = projectSlideshow.querySelector(".project-slideshow-image");
+  const count = projectSlideshow.querySelector("[data-slide-count]");
+  const caption = projectSlideshow.querySelector("[data-slide-caption]");
+  const dots = projectSlideshow.querySelector("[data-slide-dots]");
+  const toggle = projectSlideshow.querySelector("[data-slide-toggle]");
+  const previous = projectSlideshow.querySelector("[data-slide-prev]");
+  const next = projectSlideshow.querySelector("[data-slide-next]");
+  let activeSlide = 0;
+  let timer;
+  let paused = false;
+  let isVisible = false;
+
+  const renderSlide = () => {
+    const slide = slides[activeSlide];
+    image.src = slide.src;
+    image.alt = slide.alt;
+    count.textContent = `${activeSlide + 1} / ${slides.length}`;
+    caption.textContent = "Additional field photograph · project details not available";
+    dots.querySelectorAll("button").forEach((dot, index) => {
+      const active = index === activeSlide;
+      dot.classList.toggle("is-active", active);
+      dot.setAttribute("aria-current", String(active));
+    });
+  };
+  const stopTimer = () => {
+    window.clearInterval(timer);
+    timer = undefined;
+  };
+  const startTimer = (resumeWhileFocused = false) => {
+    stopTimer();
+    if (
+      paused ||
+      !isVisible ||
+      document.hidden ||
+      projectSlideshow.matches(":hover") ||
+      (!resumeWhileFocused &&
+        projectSlideshow.contains(document.activeElement)) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return;
+    }
+    timer = window.setInterval(() => {
+      activeSlide = (activeSlide + 1) % slides.length;
+      renderSlide();
+    }, 5000);
+  };
+  const showSlide = (index) => {
+    activeSlide = (index + slides.length) % slides.length;
+    renderSlide();
+    startTimer(!paused);
+  };
+
+  dots.innerHTML = slides
+    .map(
+      (_, index) =>
+        `<button type="button" aria-label="Show site photo ${index + 1}" aria-current="${index === 0}" class="${index === 0 ? "is-active" : ""}" data-slide-index="${index}"></button>`,
+    )
+    .join("");
+  dots.addEventListener("click", (event) => {
+    const dot = event.target.closest("[data-slide-index]");
+    if (dot) showSlide(Number(dot.dataset.slideIndex));
+  });
+  previous.addEventListener("click", () => showSlide(activeSlide - 1));
+  next.addEventListener("click", () => showSlide(activeSlide + 1));
+  toggle.addEventListener("click", () => {
+    paused = !paused;
+    toggle.setAttribute("aria-pressed", String(paused));
+    toggle.innerHTML = paused
+      ? '<i class="fa-solid fa-play" aria-hidden="true"></i><span>Resume slideshow</span>'
+      : '<i class="fa-solid fa-pause" aria-hidden="true"></i><span>Pause slideshow</span>';
+    startTimer(!paused);
+  });
+  projectSlideshow.addEventListener("mouseenter", stopTimer);
+  projectSlideshow.addEventListener("mouseleave", startTimer);
+  projectSlideshow.addEventListener("focusin", stopTimer);
+  projectSlideshow.addEventListener("focusout", (event) => {
+    if (!projectSlideshow.contains(event.relatedTarget)) startTimer();
+  });
+  document.addEventListener("visibilitychange", startTimer);
+  const slideshowVisibility = new IntersectionObserver(([entry]) => {
+    isVisible = entry.isIntersecting;
+    startTimer();
+  });
+  slideshowVisibility.observe(projectSlideshow);
+  renderSlide();
+  startTimer();
 }
 const lb = document.getElementById("lb");
 const lbi = document.getElementById("lbi");

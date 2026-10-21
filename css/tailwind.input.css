@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@source "../*.html";
+@source "../js";
+
+@theme {
+  --color-or: #D9692D;
+  --color-rust: #B54A1F;
+  --color-brn: #4A2C1A;
+  --color-dk: #2B1A10;
+  --color-cream: #FBF6F0;
+  --color-sand: #F1E6DA;
+  --font-disp: "Cinzel", "serif";
+  --font-sans: "Poppins", "system-ui", "sans-serif";
+}

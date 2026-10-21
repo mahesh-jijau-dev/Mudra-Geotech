@@ -587,6 +587,148 @@ body {
     filter: saturate(1.08);
 }
 
+.project-slideshow {
+    overflow: hidden;
+    border: 1px solid #F1E6DA;
+    border-radius: 1.25rem;
+    background: #fff;
+    box-shadow: 0 18px 44px -24px rgba(74, 44, 26, .4);
+}
+
+.project-slideshow-frame {
+    position: relative;
+    overflow: hidden;
+    background: #4A2C1A;
+}
+
+.project-slideshow-image {
+    display: block;
+    width: 100%;
+    height: clamp(280px, 56vw, 620px);
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+.project-slideshow-arrow {
+    position: absolute;
+    top: 50%;
+    display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, .55);
+    border-radius: 999px;
+    background: rgba(74, 44, 26, .72);
+    color: #fff;
+    transform: translateY(-50%);
+    transition: background .2s ease, transform .2s ease;
+}
+
+.project-slideshow-arrow:hover {
+    background: #B54A1F;
+    transform: translateY(-50%) scale(1.06);
+}
+
+.project-slideshow-arrow.is-prev {
+    left: 1rem;
+}
+
+.project-slideshow-arrow.is-next {
+    right: 1rem;
+}
+
+.project-slideshow-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2.5rem 1.25rem 1rem;
+    background: linear-gradient(transparent, rgba(34, 25, 19, .82));
+    color: #fff;
+    font-size: .85rem;
+}
+
+.project-slideshow-caption span {
+    flex: 0 0 auto;
+    font-weight: 600;
+}
+
+.project-slideshow-controls {
+    display: flex;
+    min-height: 4.25rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .75rem 1.25rem;
+}
+
+.project-slideshow-dots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .45rem;
+}
+
+.project-slideshow-dots button {
+    width: .55rem;
+    height: .55rem;
+    border-radius: 999px;
+    background: #d8c7b6;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.project-slideshow-dots button:hover {
+    transform: scale(1.2);
+}
+
+.project-slideshow-dots button.is-active {
+    background: #B54A1F;
+}
+
+.project-slideshow-toggle {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: .5rem;
+    color: #4A2C1A;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.project-slideshow-toggle:hover {
+    color: #B54A1F;
+}
+
+.client-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.client-logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    padding: 1rem;
+    border: 1px solid #F1E6DA;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 12px 28px -22px rgba(74, 44, 26, .35);
+}
+
+.client-logo-card img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: 110px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(74, 44, 26, .08));
+}
+
 .award-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
