@@ -1,27 +1,86 @@
 const S = [
-  { icon: "fa-solid fa-layer-group", title: "Ground Improvement", description: "Proposal, design and detailing for soil improvement schemes" },
-  { icon: "fa-solid fa-mountain-sun", title: "Slope Stabilization", description: "Stability analysis, protection and landslide mitigation measures" },
-  { icon: "fa-solid fa-grip-lines-vertical", title: "Reinforced Soil Walls & Slopes", description: "RS/RE walls, MSE walls and reinforced soil slope design" },
-  { icon: "fa-solid fa-magnifying-glass", title: "Geotechnical Investigation", description: "Subsurface exploration, soil/rock testing and lab reports" },
-  { icon: "fa-solid fa-building-columns", title: "Foundation Engineering", description: "Shallow & deep foundation design, pile, raft and footing analysis" },
-  { icon: "fa-solid fa-border-all", title: "Geosynthetics Applications", description: "Geogrid, geotextile, geomembrane applications for roads & slopes" },
-  { icon: "fa-solid fa-cubes", title: "Retaining Solutions", description: "Gravity, cantilever, anchored and gabion retaining wall designs" },
-  { icon: "fa-solid fa-road", title: "Bridge / Embankment / Approach", description: "Approach roads, embankments, bridge abutment and pavement solutions" },
+  {
+    icon: "fa-solid fa-layer-group",
+    title: "Ground Improvement",
+    description: "Proposal, design and detailing for soil improvement schemes",
+    image: "Ground Improvement.jpeg",
+  },
+  {
+    icon: "fa-solid fa-mountain-sun",
+    title: "Slope Stabilization",
+    description:
+      "Stability analysis, protection and landslide mitigation measures",
+    image: "Slope Stability.jpeg",
+  },
+  {
+    icon: "fa-solid fa-grip-lines-vertical",
+    title: "Reinforced Soil Walls & Slopes",
+    description: "RS/RE walls, MSE walls and reinforced soil slope design",
+    image: "Reinforced earth-soil Wall.jpeg",
+  },
+  {
+    icon: "fa-solid fa-magnifying-glass",
+    title: "Geotechnical Investigation",
+    description: "Subsurface exploration, soil/rock testing and lab reports",
+    image: "Geotechnical Investigation.jpeg",
+  },
+  {
+    icon: "fa-solid fa-building-columns",
+    title: "Foundation Engineering",
+    description:
+      "Shallow & deep foundation design, pile, raft and footing analysis",
+    image: "Foundation engineering.jpeg",
+  },
+  {
+    icon: "fa-solid fa-border-all",
+    title: "Geosynthetics Applications",
+    description:
+      "Geogrid, geotextile, geomembrane applications for roads & slopes",
+    image: "Geosythetics Material.jpeg",
+  },
+  {
+    icon: "fa-solid fa-cubes",
+    title: "Retaining Solutions",
+    description:
+      "Gravity, cantilever, anchored and gabion retaining wall designs",
+    image: "Gabion wall.jpeg",
+  },
+  {
+    icon: "fa-solid fa-road",
+    title: "Bridge / Embankment / Approach",
+    description:
+      "Approach roads, embankments, bridge abutment and pavement solutions",
+    image: "Approch .jpeg",
+  },
 ];
 const sv = document.getElementById("sv");
 if (sv) {
   sv.innerHTML = S.map(
     (s, i) =>
-      `<article class="reveal card service-card group bg-white border border-sand rounded-2xl p-7 relative overflow-hidden" style="transition-delay:${(i % 4) * 80}ms"><div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-or/10 group-hover:scale-[2.2] transition-transform duration-500"></div><div class="service-icon relative" aria-hidden="true"><i class="${s.icon}"></i></div><h2 class="relative font-disp font-bold text-brn text-lg mt-5">${s.title}</h2><p class="relative text-sm text-brn/70 mt-2">${s.description}</p></article>`,
+      `<article class="reveal card service-card group bg-white border border-sand rounded-2xl p-7 relative overflow-hidden" style="transition-delay:${(i % 4) * 80}ms"><img class="service-card-image" src="assets/services/${s.image}" alt="" aria-hidden="true" loading="lazy"><div class="service-card-content"><div class="service-icon" aria-hidden="true"><i class="${s.icon}"></i></div><h2 class="font-disp font-bold text-dk text-lg mt-5">${s.title}</h2><p class="text-sm font-medium text-dk mt-2">${s.description}</p></div></article>`,
   ).join("");
 }
+const stateProjectCounts = [
+  { name: "Maharashtra", projects: 76, x: 178.5, y: 368.7 },
+  { name: "Karnataka", projects: 4, x: 179.6, y: 462.5 },
+  { name: "Madhya Pradesh", projects: 2, x: 218.39, y: 287.89 },
+  { name: "West Bengal", projects: 2, x: 395.37, y: 281.45 },
+  { name: "Uttar Pradesh", projects: 3, x: 260.06, y: 220.91 },
+  { name: "Odisha", projects: 2, x: 330.71, y: 347.76 },
+  { name: "Assam", projects: 1, x: 484.16, y: 232.16 },
+  { name: "Goa", projects: 1, x: 140.92, y: 449.59 },
+  { name: "Andhra Pradesh", projects: 1, x: 249.1, y: 441.88 },
+  { name: "Himachal Pradesh", projects: 1, x: 199.3, y: 121.9 },
+  { name: "Jammu & Kashmir (UT)", projects: 1, x: 155.66, y: 87.38 },
+];
 const caseStudies = [
   {
     id: "case-highway-re-wall",
     title: "Highway Reinforced Earth Wall",
     category: "Reinforced soil wall",
     location: "Pune, Maharashtra · sample location",
-    image: "assets/new/Nanded Reinforced Earth- Soil Wall Project/DJI_0926.webp",
+    image:
+      "assets/new/Nanded Reinforced Earth- Soil Wall Project/DJI_0926.webp",
     alt: "Illustrative reinforced soil wall along a highway",
     challenge:
       "Illustrative brief: create a stable highway embankment beside a constrained right-of-way and variable ground.",
@@ -81,9 +140,7 @@ const caseStudies = [
 ];
 
 function renderCaseStudy(project, projectPage) {
-  const anchor = projectPage
-    ? `#${project.id}`
-    : `projects.html#${project.id}`;
+  const anchor = projectPage ? `#${project.id}` : `projects.html#${project.id}`;
   return `<article class="case-card reveal" id="${projectPage ? project.id : ""}">
     <details class="case-details-toggle">
       <summary class="case-summary">
@@ -127,6 +184,7 @@ if (projectCases) {
 const mapMarkers = document.getElementById("map-markers");
 const mapPreview = document.getElementById("map-preview");
 if (mapMarkers && mapPreview) {
+  const stateProjectList = document.getElementById("state-project-counts");
   const showMapProject = (project) => {
     const state = project.location.split(", ")[1].split(" ·")[0];
     mapMarkers.querySelectorAll("button").forEach((marker) => {
@@ -145,7 +203,12 @@ if (mapMarkers && mapPreview) {
         <a class="btn btn-p mt-6" href="projects.html#${project.id}">View case study <span aria-hidden="true">→</span></a>
       </div>`;
   };
-  mapMarkers.innerHTML = caseStudies
+  mapMarkers.innerHTML = stateProjectCounts
+    .map(
+      (state, index) =>
+        `<span class="state-count-marker" style="left:${(state.x / 600) * 100}%;top:${(state.y / 640) * 100}%;--marker-delay:${index * 45}ms" data-state-label="${state.name}: ${state.projects} ${state.projects === 1 ? "project" : "projects"}" title="${state.name}: ${state.projects} ${state.projects === 1 ? "project" : "projects"}" aria-hidden="true">${state.projects}</span>`,
+    )
+    .join("") + caseStudies
     .map(
       (project, index) =>
         `<button class="map-marker${index === 0 ? " is-active" : ""}" type="button" style="left:${project.mapPosition.left};top:${project.mapPosition.top};--marker-delay:${index * 120}ms" data-project="${project.id}" aria-label="Show illustrative ${project.title} sample near ${project.location}" aria-pressed="${index === 0}">
@@ -153,6 +216,14 @@ if (mapMarkers && mapPreview) {
         </button>`,
     )
     .join("");
+  if (stateProjectList) {
+    stateProjectList.innerHTML = stateProjectCounts
+      .map(
+        (state) =>
+          `<li class="state-project-item"><span>${state.name}</span><strong>${state.projects}</strong><span class="state-project-unit">${state.projects === 1 ? "project" : "projects"}</span></li>`,
+      )
+      .join("");
+  }
   mapMarkers.addEventListener("click", (event) => {
     const marker = event.target.closest(".map-marker");
     if (!marker) return;
@@ -170,12 +241,20 @@ const groundContent = {
   investigation: {
     title: "Investigate the ground",
     copy: "Boreholes, in-situ testing and laboratory evaluation help build a ground model and establish design parameters. The investigation plan depends on the structure, geology and site conditions.",
-    items: ["Borehole logging", "SPT and in-situ tests", "Soil and rock testing"],
+    items: [
+      "Borehole logging",
+      "SPT and in-situ tests",
+      "Soil and rock testing",
+    ],
   },
   design: {
     title: "Engineer for the conditions",
     copy: "Ground conditions inform foundation selection, slope or retaining-system design, and construction recommendations. Each solution needs project-specific analysis and verified site data.",
-    items: ["Foundation engineering", "Slope stability", "Retaining and reinforced soil"],
+    items: [
+      "Foundation engineering",
+      "Slope stability",
+      "Retaining and reinforced soil",
+    ],
   },
 };
 function showGroundTab(tab) {
@@ -215,20 +294,16 @@ const founderHighlightContent = {
   research:
     "Her profile notes technical conference participation and recognition for technical paper presentations.",
 };
-const founderHighlightCopy = document.getElementById(
-  "founder-highlight-copy",
-);
+const founderHighlightCopy = document.getElementById("founder-highlight-copy");
 document.querySelectorAll("[data-founder-highlight]").forEach((button) => {
   button.addEventListener("click", () => {
     const content = founderHighlightContent[button.dataset.founderHighlight];
     if (!content || !founderHighlightCopy) return;
-    document
-      .querySelectorAll("[data-founder-highlight]")
-      .forEach((item) => {
-        const selected = item === button;
-        item.classList.toggle("is-active", selected);
-        item.setAttribute("aria-pressed", String(selected));
-      });
+    document.querySelectorAll("[data-founder-highlight]").forEach((item) => {
+      const selected = item === button;
+      item.classList.toggle("is-active", selected);
+      item.setAttribute("aria-pressed", String(selected));
+    });
     founderHighlightCopy.textContent = content;
   });
 });
@@ -310,7 +385,8 @@ const nav = document.getElementById("nav"),
   burger = document.getElementById("burger");
 function sc() {
   const y = scrollY;
-  if (nav && y > 40) nav.classList.add("bg-cream/95", "backdrop-blur", "shadow-md");
+  if (nav && y > 40)
+    nav.classList.add("bg-cream/95", "backdrop-blur", "shadow-md");
   if (bar) {
     bar.style.width =
       (y / (document.documentElement.scrollHeight - innerHeight)) * 100 + "%";
@@ -376,45 +452,161 @@ if (sectionLinks.length > 0 && pageSections.length > 0) {
 const projectSlideshow = document.querySelector("[data-project-slideshow]");
 if (projectSlideshow) {
   const slides = [
-    { src: "assets/new/BH-4.jpeg", alt: "Geotechnical field photograph; project details not available" },
-    { src: "assets/new/Core.Box-BH-01.jpeg", alt: "Geotechnical core samples; project details not available" },
-    { src: "assets/new/Field tests.jpeg", alt: "Geotechnical field testing; project details not available" },
-    { src: "assets/new/Karanje-Satara.jpeg", alt: "Site photograph; project details not available" },
-    { src: "assets/new/Satara.jpeg", alt: "Site photograph; project details not available" },
-    { src: "assets/new/Shore.pile.webp", alt: "Shoring site photograph; project details not available" },
-    { src: "assets/new/Shubhada-on.site.jpeg", alt: "Site visit photograph; project details not available" },
-    { src: "assets/new/Slope.Staility-slider-1.jpeg", alt: "Slope site photograph; project details not available" },
-    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.09 PM (4).jpeg", alt: "Geotechnical site photograph; project details not available" },
-    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.09 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
-    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.10 PM (1).jpeg", alt: "Geotechnical site photograph; project details not available" },
-    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.10 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
-    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.17.46 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
-    { src: "assets/new/WhatsApp Image 2026-10-17 at 1.18.08 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
-    { src: "assets/new/WhatsApp Image 2026-10-17 at 12.32.33 PM.jpeg", alt: "Geotechnical site photograph; project details not available" },
+    {
+      src: "assets/new/BH-4.jpeg",
+      alt: "Geotechnical field photograph; project details not available",
+    },
+    {
+      src: "assets/new/Core.Box-BH-01.jpeg",
+      alt: "Geotechnical core samples; project details not available",
+    },
+    {
+      src: "assets/new/Field tests.jpeg",
+      alt: "Geotechnical field testing; project details not available",
+    },
+    {
+      src: "assets/new/Karanje-Satara.jpeg",
+      alt: "Site photograph; project details not available",
+    },
+    {
+      src: "assets/new/Satara.jpeg",
+      alt: "Site photograph; project details not available",
+    },
+    {
+      src: "assets/new/Shore.pile.webp",
+      alt: "Shoring site photograph; project details not available",
+    },
+    {
+      src: "assets/new/Shubhada-on.site.jpeg",
+      alt: "Site visit photograph; project details not available",
+    },
+    {
+      src: "assets/new/Slope.Staility-slider-1.jpeg",
+      alt: "Slope site photograph; project details not available",
+    },
+    {
+      src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.09 PM (4).jpeg",
+      alt: "Geotechnical site photograph; project details not available",
+    },
+    {
+      src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.09 PM.jpeg",
+      alt: "Geotechnical site photograph; project details not available",
+    },
+    {
+      src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.10 PM (1).jpeg",
+      alt: "Geotechnical site photograph; project details not available",
+    },
+    {
+      src: "assets/new/WhatsApp Image 2026-10-17 at 1.08.10 PM.jpeg",
+      alt: "Geotechnical site photograph; project details not available",
+    },
+    {
+      src: "assets/new/WhatsApp Image 2026-10-17 at 1.17.46 PM.jpeg",
+      alt: "Geotechnical site photograph; project details not available",
+    },
+    {
+      src: "assets/new/WhatsApp Image 2026-10-17 at 1.18.08 PM.jpeg",
+      alt: "Geotechnical site photograph; project details not available",
+    },
+    {
+      src: "assets/new/WhatsApp Image 2026-10-17 at 12.32.33 PM.jpeg",
+      alt: "Geotechnical site photograph; project details not available",
+    },
   ];
-  const image = projectSlideshow.querySelector(".project-slideshow-image");
+  const slideCards = [...projectSlideshow.querySelectorAll("[data-stack-card]")];
   const count = projectSlideshow.querySelector("[data-slide-count]");
   const caption = projectSlideshow.querySelector("[data-slide-caption]");
   const dots = projectSlideshow.querySelector("[data-slide-dots]");
-  const toggle = projectSlideshow.querySelector("[data-slide-toggle]");
-  const previous = projectSlideshow.querySelector("[data-slide-prev]");
-  const next = projectSlideshow.querySelector("[data-slide-next]");
+  const stage = projectSlideshow.querySelector(".project-slideshow-stage");
   let activeSlide = 0;
   let timer;
-  let paused = false;
+  let animationTimer;
   let isVisible = false;
+  let isAnimating = false;
+  let leftCard = slideCards.find((card) => card.dataset.stackCard === "left");
+  let activeCard = slideCards.find((card) => card.dataset.stackCard === "active");
+  let rightCard = slideCards.find((card) => card.dataset.stackCard === "right");
 
-  const renderSlide = () => {
-    const slide = slides[activeSlide];
-    image.src = slide.src;
-    image.alt = slide.alt;
+  const renderStatus = () => {
     count.textContent = `${activeSlide + 1} / ${slides.length}`;
-    caption.textContent = "Additional field photograph · project details not available";
+    caption.textContent =
+      "Additional field photograph · project details not available";
     dots.querySelectorAll("button").forEach((dot, index) => {
       const active = index === activeSlide;
       dot.classList.toggle("is-active", active);
       dot.setAttribute("aria-current", String(active));
     });
+  };
+  const setCardPosition = (card, position) => {
+    card.classList.remove(
+      "is-back-left",
+      "is-active",
+      "is-back-right",
+      "is-recycling",
+    );
+    card.classList.add(position);
+    card.setAttribute("aria-hidden", String(position !== "is-active"));
+  };
+  const updateCard = (card, slideIndex) => {
+    const slide = slides[slideIndex];
+    card.src = slide.src;
+    card.alt = slide.alt;
+  };
+  const renderSlide = () => {
+    const cardSlides = [
+      (activeSlide + slides.length - 1) % slides.length,
+      activeSlide,
+      (activeSlide + 1) % slides.length,
+    ];
+    [leftCard, activeCard, rightCard].forEach((card, index) => {
+      updateCard(card, cardSlides[index]);
+      setCardPosition(
+        card,
+        ["is-back-left", "is-active", "is-back-right"][index],
+      );
+    });
+    renderStatus();
+  };
+  const moveSlide = (direction) => {
+    if (isAnimating) return;
+
+    isAnimating = true;
+    activeSlide = (activeSlide + direction + slides.length) % slides.length;
+    const recycledCard = direction > 0 ? leftCard : rightCard;
+    if (direction > 0) {
+      leftCard = activeCard;
+      activeCard = rightCard;
+      rightCard = recycledCard;
+    } else {
+      rightCard = activeCard;
+      activeCard = leftCard;
+      leftCard = recycledCard;
+    }
+    [leftCard, activeCard, rightCard].forEach((card) => {
+      card.classList.remove(
+        "is-back-left",
+        "is-active",
+        "is-back-right",
+        "is-recycling",
+      );
+    });
+    recycledCard.classList.add("is-recycling");
+    setCardPosition(leftCard, "is-back-left");
+    setCardPosition(activeCard, "is-active");
+    renderStatus();
+
+    animationTimer = window.setTimeout(() => {
+      const recycledIndex =
+        direction > 0
+          ? (activeSlide + 1) % slides.length
+          : (activeSlide + slides.length - 1) % slides.length;
+      updateCard(recycledCard, recycledIndex);
+      setCardPosition(
+        recycledCard,
+        direction > 0 ? "is-back-right" : "is-back-left",
+      );
+      isAnimating = false;
+    }, 850);
   };
   const stopTimer = () => {
     window.clearInterval(timer);
@@ -423,7 +615,6 @@ if (projectSlideshow) {
   const startTimer = (resumeWhileFocused = false) => {
     stopTimer();
     if (
-      paused ||
       !isVisible ||
       document.hidden ||
       projectSlideshow.matches(":hover") ||
@@ -434,14 +625,31 @@ if (projectSlideshow) {
       return;
     }
     timer = window.setInterval(() => {
-      activeSlide = (activeSlide + 1) % slides.length;
-      renderSlide();
-    }, 5000);
+      moveSlide(1);
+    }, 2500);
   };
   const showSlide = (index) => {
-    activeSlide = (index + slides.length) % slides.length;
-    renderSlide();
-    startTimer(!paused);
+    const target = (index + slides.length) % slides.length;
+    if (target === activeSlide || isAnimating) return;
+    const forward = (target - activeSlide + slides.length) % slides.length;
+    if (forward === 1) {
+      moveSlide(1);
+    } else if (forward === slides.length - 1) {
+      moveSlide(-1);
+    } else {
+      window.clearTimeout(animationTimer);
+      isAnimating = true;
+      stage.classList.add("is-refreshing");
+      activeSlide = target;
+      renderSlide();
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          stage.classList.remove("is-refreshing");
+          isAnimating = false;
+        });
+      });
+    }
+    startTimer();
   };
 
   dots.innerHTML = slides
@@ -453,16 +661,6 @@ if (projectSlideshow) {
   dots.addEventListener("click", (event) => {
     const dot = event.target.closest("[data-slide-index]");
     if (dot) showSlide(Number(dot.dataset.slideIndex));
-  });
-  previous.addEventListener("click", () => showSlide(activeSlide - 1));
-  next.addEventListener("click", () => showSlide(activeSlide + 1));
-  toggle.addEventListener("click", () => {
-    paused = !paused;
-    toggle.setAttribute("aria-pressed", String(paused));
-    toggle.innerHTML = paused
-      ? '<i class="fa-solid fa-play" aria-hidden="true"></i><span>Resume slideshow</span>'
-      : '<i class="fa-solid fa-pause" aria-hidden="true"></i><span>Pause slideshow</span>';
-    startTimer(!paused);
   });
   projectSlideshow.addEventListener("mouseenter", stopTimer);
   projectSlideshow.addEventListener("mouseleave", startTimer);
