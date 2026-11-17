@@ -140,30 +140,15 @@ const caseStudies = [
 ];
 
 function renderCaseStudy(project, projectPage) {
-  const anchor = projectPage ? `#${project.id}` : `projects.html#${project.id}`;
   return `<article class="case-card reveal" id="${projectPage ? project.id : ""}">
-    <details class="case-details-toggle">
-      <summary class="case-summary">
-        <span class="case-image-wrap">
-          <img class="case-image" src="${project.image}" alt="${project.alt}" loading="lazy">
-          <span class="case-sample-label">Illustrative sample</span>
-        </span>
-        <span class="case-summary-copy">
-          <span class="case-category">${project.category}</span>
-          <span class="case-title">${project.title}</span>
-          <span class="case-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> ${project.location}</span>
-          <span class="case-expand"><span class="case-expand-open">Explore case study</span><span class="case-expand-close">Close details</span><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
-        </span>
-      </summary>
-      <div class="case-content">
-        <p class="case-challenge"><strong>Technical challenge</strong>${project.challenge}</p>
-        <div class="case-detail-grid">
-          <div><h4>MRUDA scope</h4><p>${project.scope}</p></div>
-          <div><h4>Illustrative deliverables</h4><p>${project.deliverables}</p></div>
-        </div>
-        ${projectPage ? "" : `<a class="case-link" href="${anchor}">Open case study <span aria-hidden="true">→</span></a>`}
-      </div>
-    </details>
+    <span class="case-image-wrap">
+      <img class="case-image" src="${project.image}" alt="${project.alt}" loading="lazy">
+    </span>
+    <div class="case-card-body">
+      <span class="case-category">${project.category}</span>
+      <span class="case-title">${project.title}</span>
+      <span class="case-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> ${project.location}</span>
+    </div>
   </article>`;
 }
 
@@ -530,7 +515,7 @@ if (projectSlideshow) {
   const renderStatus = () => {
     count.textContent = `${activeSlide + 1} / ${slides.length}`;
     caption.textContent =
-      "Additional field photograph · project details not available";
+      "";
     dots.querySelectorAll("button").forEach((dot, index) => {
       const active = index === activeSlide;
       dot.classList.toggle("is-active", active);

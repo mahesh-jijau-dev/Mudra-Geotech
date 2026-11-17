@@ -400,21 +400,6 @@ section.py-24:not(.page-hero) {
     box-shadow: 0 20px 38px -24px rgba(74, 44, 26, .48);
 }
 
-.case-details-toggle {
-    overflow: hidden;
-    border-radius: inherit;
-}
-
-.case-summary {
-    display: block;
-    cursor: pointer;
-    list-style: none;
-}
-
-.case-summary::-webkit-details-marker {
-    display: none;
-}
-
 .case-image-wrap {
     display: block;
     position: relative;
@@ -430,8 +415,7 @@ section.py-24:not(.page-hero) {
     transition: transform .7s cubic-bezier(.2, .7, .2, 1), filter .45s ease;
 }
 
-.case-card:hover .case-image,
-.case-details-toggle[open] .case-image {
+.case-card:hover .case-image {
     transform: scale(1.055);
     filter: saturate(1.08);
 }
@@ -450,13 +434,7 @@ section.py-24:not(.page-hero) {
     text-transform: uppercase;
 }
 
-.case-image-wrap > .case-sample-label {
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-}
-
-.case-summary-copy {
+.case-card-body {
     display: grid;
     gap: .6rem;
     padding: 1.25rem 1.4rem 1.4rem;
@@ -492,85 +470,9 @@ section.py-24:not(.page-hero) {
     color: #D9692D;
 }
 
-.case-expand {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: .45rem;
-    color: #B54A1F;
-    font-size: .82rem;
-    font-weight: 600;
-}
-
-.case-expand-close,
-.case-details-toggle[open] .case-expand-open {
-    display: none;
-}
-
-.case-details-toggle[open] .case-expand-close {
-    display: inline;
-}
-
-.case-details-toggle[open] .case-expand i {
-    transform: rotate(45deg);
-}
-
-.case-expand i {
-    transition: transform .25s ease;
-}
-
-.case-content {
-    padding: 0 1.4rem 1.5rem;
-    border-top: 1px solid #F1E6DA;
-    animation: case-expand-in .35s ease both;
-}
-
 @keyframes case-expand-in {
     from { opacity: 0; transform: translateY(-8px); }
     to { opacity: 1; transform: none; }
-}
-
-.case-challenge {
-    display: grid;
-    gap: .35rem;
-    margin-top: 1.2rem;
-    color: rgba(74, 44, 26, .75);
-    font-size: .85rem;
-    line-height: 1.65;
-}
-
-.case-challenge strong,
-.case-detail-grid h4 {
-    color: #4A2C1A;
-    font-size: .8rem;
-    font-weight: 600;
-}
-
-.case-detail-grid {
-    display: grid;
-    gap: 1rem;
-    margin-top: 1.1rem;
-}
-
-.case-detail-grid p {
-    margin-top: .35rem;
-    color: rgba(74, 44, 26, .68);
-    font-size: .8rem;
-    line-height: 1.65;
-}
-
-.case-link {
-    display: inline-flex;
-    gap: .45rem;
-    align-items: center;
-    margin-top: 1.2rem;
-    color: #B54A1F;
-    font-size: .85rem;
-    font-weight: 600;
-}
-
-.case-link:hover {
-    text-decoration: underline;
 }
 
 .project-gallery-grid {
@@ -1494,7 +1396,6 @@ section.py-24:not(.page-hero) {
     .dash,
     .hero-slide,
     .hero-reveal,
-    .case-content,
     .ground-layer,
     .site-footer > .strata {
         animation: none;
