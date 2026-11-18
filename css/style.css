@@ -1313,17 +1313,23 @@ section.py-24:not(.page-hero) {
     width: min(100%, 300px);
     margin-inline: auto;
     border: 7px solid rgba(217, 105, 45, .75);
-    border-radius: 999px 999px 1.5rem 1.5rem;
+    border-radius: .5rem;
     box-shadow: 0 24px 50px -30px rgba(74, 44, 26, .6);
 }
 
 .founder-portrait img {
     display: block;
     width: 100%;
-    aspect-ratio: 3 / 4;
-    border-radius: inherit;
+    aspect-ratio: 7 / 9;
+    border-radius: 1px;
     object-fit: cover;
     object-position: center 22%;
+}
+
+.founder-portrait-about {
+    aspect-ratio: 7 / 9;
+    border-radius: .5rem;
+    overflow: hidden;
 }
 
 .founder-experience {

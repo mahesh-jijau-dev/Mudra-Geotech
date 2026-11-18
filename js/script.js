@@ -691,6 +691,6 @@ const fm = document.getElementById("fm");
 if (fb && fn && fp && fs && fm) {
   fb.onclick = () => {
     const m = `Hello MRUDA Geotech,%0AName: ${encodeURIComponent(fn.value)}%0AContact: ${encodeURIComponent(fp.value)}%0AService: ${encodeURIComponent(fs.value)}%0AMessage: ${encodeURIComponent(fm.value)}`;
-    window.open("https://wa.me/919987515657?text=" + m, "_blank");
+    window.open("https://wa.me/919423916774?text=" + m, "_blank");
   };
 }
