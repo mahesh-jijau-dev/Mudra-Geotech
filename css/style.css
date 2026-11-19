@@ -1327,9 +1327,79 @@ section.py-24:not(.page-hero) {
 }
 
 .founder-portrait-about {
+    width: min(100%, 14rem);
+    margin-inline: auto;
     aspect-ratio: 7 / 9;
     border-radius: .5rem;
     overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    #founder {
+        padding-block: .25rem;
+    }
+
+    #founder .founder-heading p {
+        margin-bottom: .5rem;
+    }
+
+    #founder .founder-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    #founder .founder-heading .strata {
+        margin-top: .5rem;
+    }
+
+    #founder .founder-layout {
+        column-gap: 1.5rem;
+        margin-top: .75rem;
+    }
+
+    #founder .founder-portrait-about {
+        width: min(100%, 12rem);
+    }
+
+    #founder .founder-profile h3 {
+        margin-top: .75rem;
+        font-size: 1.35rem;
+    }
+
+    #founder .founder-profile > p {
+        font-size: .875rem;
+        line-height: 1.35;
+    }
+
+    #founder .founder-profile > p:last-child {
+        margin-top: .5rem;
+    }
+
+    #founder #fl {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: .65rem;
+    }
+
+    #founder #fl > li {
+        gap: .5rem;
+        padding: .55rem .65rem;
+        font-size: .875rem;
+        line-height: 1.35;
+    }
+
+    #founder #fl > li > span:first-child {
+        width: .5rem;
+        height: .5rem;
+        margin-top: .25rem;
+    }
+
+    #founder .founder-gallery {
+        gap: .5rem;
+        margin-top: .75rem;
+    }
+
+    #founder .founder-gallery img {
+        height: 4.5rem;
+    }
 }
 
 .founder-experience {
